@@ -1,0 +1,19 @@
+# Ignore datasets
+datasets/
+*.csv
+*.tsv
+
+# Ignore Python cache & envs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore other unnecessary stuff
+*.log

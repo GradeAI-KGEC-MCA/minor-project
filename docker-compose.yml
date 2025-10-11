@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: grad-ai
+    command: ["main.py"]       # overrides CMD if needed
+    volumes:
+      - .:/app                 # live code edits
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
+    stdin_open: true
