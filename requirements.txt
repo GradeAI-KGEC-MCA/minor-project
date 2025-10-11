@@ -3,3 +3,5 @@ pandas
 scikit-learn
 lime
 shap
+datasets
+kagglehub

@@ -1,25 +1,27 @@
+# base image
 FROM python:3.11-slim
 
+# set working directory
 WORKDIR /app
 
-# system dependencies
+# install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential gcc g++ libffi-dev libblas-dev liblapack-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# create venv inside container
-RUN python -m venv /app/.venv
+# create a venv outside /app so mounts won't overwrite it
+RUN python -m venv /venv
 
 # upgrade pip inside venv
-RUN /app/.venv/bin/pip install --upgrade pip
+RUN /venv/bin/pip install --upgrade pip
 
 # copy requirements and install inside venv
 COPY requirements.txt .
-RUN /app/.venv/bin/pip install --no-cache-dir -r requirements.txt
+RUN /venv/bin/pip install --no-cache-dir -r requirements.txt
 
 # copy project files
 COPY . .
 
-# default command uses container venv
-ENTRYPOINT ["/app/.venv/bin/python"]
+# entrypoint points to container venv python
+ENTRYPOINT ["/venv/bin/python"]
 CMD ["main.py"]
