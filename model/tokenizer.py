@@ -54,6 +54,6 @@ def tokenize(data_files:set, tokenizer_path:str = _default_tokenizer, is_trainin
     data.set_format("torch")
 
     if tokenizer_path == _default_tokenizer:
-        tokenizer.save_pretrained("./bert_grader")
+        tokenizer.save_pretrained("./model/bert_tokenizer")
     return data
 
