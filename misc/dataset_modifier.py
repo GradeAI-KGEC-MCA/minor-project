@@ -1,11 +1,14 @@
 import json
 import random
-folders = [
-    './data/updated/incorrect/',
-    './data/updated/correct/'
-]
+folders = {
+    'incorrect': './data/updated/incorrect/',
+    'correct': './data/updated/correct/'
+}
 file_names = [
-    train
+    'train',
+    'validation',
+    'unseen_questions',
+    'unseen_answers'
 ]
 
 def quicksort(data, low=0, high=None):
@@ -69,8 +72,17 @@ def separate_correct_incorrect(data):
     return {'correct':correct, 'incorrect': incorrect, 'partially_correct': partially_correct}
 
 def save_json(data, path):
-    with open(path, 'w', encoding='utf8') as f:
-        json.dump(data, f, indent=4)
+    inp = input('Do you want to save train.json? [Y/n]: ').lower()
+    if inp in ['', 'y', 'yes']:
+        with open(path, 'w', encoding='utf8') as f:
+            json.dump(data, f, indent=4)
+        print('train.json saved!')
+    else: print('Operation Terminated')
+    
+
+def get_json(path):
+    with open(path, 'r', encoding='utf8') as f:
+        return json.load(f)
 
 def count_data(data):
     count = 0
@@ -94,27 +106,37 @@ def get_questions(data):
 
 def combine_data(*args):
     combined = []
-    for key, lst in args.items():
+    for lst in args:
         combined.extend(lst)
     random.shuffle(combined)
+    print('combined size: ', count_data(combined))
     return combined
 
+def format_data(data: list[dict]) -> list[dict]:
+    formatted: list[dict] = []
 
-for file in file_paths:
-    # path = './data/updated/partially_correct/' + file + '.json' # +file+'.json'
-    paths = './data/augmented_incorrect.json'
-    with open(path, 'r', encoding='utf8') as f:
-        data1 = json.load(f)
-    
-    path = './data/updated/incorrect/train.json'
-    with open(path, 'r', encoding='utf8') as f:
-        data2 = json.load(f)
+    for record in data:
+        formatted.append({
+            'question': record['question'],
+            'reference_answer': record['reference_answer'],
+            'provided_answer': record['provided_answer'],
+            'answer_feedback': record['answer_feedback'],
+            'verification_feedback': record['verification_feedback'],
+            'max_score': record['max_score'],
+            'normalized_score': record['normalized_score']
+        })
 
-    data = combine_data(data1, data2)
-    
-    path = './data/updated/incorrect/augmented_train.json'   
-    save_json(data, path)
+    print(f'count: {count_data(formatted)}')
+    return formatted
+
+for file in file_names:
+    print(file, ':\n=========================================================')
+    correct_data = format_data(get_json(folders['correct']+file+'.json'))
+    incorrect_data = format_data(get_json(folders['incorrect']+file+'.json'))
+
+    data = combine_data(correct_data, incorrect_data)
+
+    save_json(data, f'./data/updated/combined/{file}.json')
+
     print(count_data(data))
 
-
-    

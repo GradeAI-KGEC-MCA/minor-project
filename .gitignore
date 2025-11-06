@@ -1,4 +1,7 @@
-data/original
+data/original/
+# data/updated/correct/
+# data/updated/incorrect/
+# data/updated/partially_correct/
 model/results/
 model/bert_grader/
 __pycache__/
