@@ -1,0 +1,380 @@
+[
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "A connection-oriented service is preferable, because it can provide reliability that prevents loss of results on the way. As the search is done iteratively the overhead of establishing a connection is negligible.",
+        "answer_feedback": "By iterative, it is meant that the user searches for information, based upon the results obtained he/she will input a new query, for example with modified keywords, so this query and the previous query submission will be independent,\u00a0so the need for connection-oriented does not arise.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented should be better:\nWith connectionless it is in no way guaranteed that you get the data you are asking for. With connection-oriented you are guaranteed that once you find the optimal result on the search page, you always retrieve the information.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "There is Proactive and Reactive Routing.\nDisadvantage of the proactive routing is that it occupies space in the flow table even when there is no traffic over that proactive defined route.  This is bad because there is only a limited size for the table.\nDisadvantage of the reactive routing is that there is an delay at the first package because the rout needs to be established. Problem with connection-less protocol can send at full speed instantly without warning.",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "In my opinion, a connection-oriented service should be used in this scenario. This would allow for the service to store some information about the user, for instance which website she/he has already visited and therefore not always display the exact same results. In addition, it would allow QoS guarantees for the user to ensure timely results. In general, connection-oriented communication is suitable for longer communication, hence in this case it would make sense to maintain one continuous communication stream throughout the search.",
+        "answer_feedback": "Since we are refining the query, different results will be made available. Further, the scenario stated here points out the possibility of skimming many websites before reaching the required one, in such case use of connection-oriented service will result in a lot of overhead.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It's better to use a connection-oriented service, because only then can be assured, that all search results are shown to the user. With a connectionless service, there is the chance, that some information is not transmitted and an important search result is missing. The iterative search process will propably fail, if an important  result is missing.",
+        "answer_feedback": "While the stated points are true and may be good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented is better to use, because memory is needed to remember information from each search and refine the query after every search. Also, \"state\" needs to be maintained, because multiple queries are made iteratively and multiple different websites are visited in each iteration.",
+        "answer_feedback": "By iterative approach, it is meant that the user writes a query and based on the results refines the query for which persisting state is not required. Secondly, multiple websites are skimmed, connection-oriented in such cases can cause a lot of overhead.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "In this scenario I would prefer to use a connection-oriented service, since it allows the search-engine algorithms to take into account your earlier (and unsuccessful) attempts at finding your information.",
+        "answer_feedback": "The user will refine his query based on previous results, so each query submission will be independent, so connection-oriented service is not necessary.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "Two modes of control plane distribution:\n\n[1] Distributed Routing. \nDownside: It requires time to converge to optimum route with lower resource utilization.\n\n[2] Logically Centralized Routing. \nDownside: Added extra redundancy through controllers - challenges with load distribution between controller instances",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service, since the process is iterative and the next step needs the information from previous step.",
+        "answer_feedback": "By iterative, it is meant that the user searches for information, based upon the results obtained he/she will input a new query, for example with modified keywords, so this query and the previous query submission will be independent, so the need for connection-oriented does not arise.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It's better to use a connection-oriented service.\nBecause i will need to adopt an iterative process of refining my query after every search.\nThat means, there will be several package sending between my computer and server to find a very specific and important piece of information.\nSo it is better to save the state in both side and build a \"tunnel\". That will make the service better.",
+        "answer_feedback": "Since query after refining again will be submitted again to the search engine by the user, connectionless service without much overhead still serves one purpose.our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather than establishing a time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented service, because when you do a search query you get a response containing a list of the websites and since you want to skim the websites and want to go back to the results list after opening a website, you need to use a connection-oriented service, because else the information about the results list is lost after opening a website.",
+        "answer_feedback": "In case one is opening a website for skimming that could possibly be done in a new tab, this would be faster as then this could be connectionless.\u00a0 As we are just skimming it, in case some information from that website is lost, it should not be an issue so connectionless services will be better.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented, because for every request we want the full (loss-less) results back to optimize our query on and to not miss any information.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection oriented service would be more suitable in this scenario\n1) because sometimes data will be redundant so connection oriented would help\n2) it can send the accurate information about already visited site",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Use a connection-oriented is better. Because connection-orited can create an end to end connection between the sender and the receiver before transmitting the data. It's safer and the data won't lost. But connectionless service can only transfer data from one end to another end without creating any connection. So it is not a reliable network service because it does not guarantee the transfer of data packets to the receiver, and the data may be lost.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "In this scenario it would be better to use a connection-oriented service, as the overhead of the the connection setup/handshake is negligible in a communication that is longer. The benefit of using a conenction-oriented service is better service.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "connection-oriented\nthis service has no loss,  no duplication, and no sequential error, which are what the user need.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented in this scenario. Because in cinnectin-oriented overhead of handshake an be significant in short communications. Connection-oriented an provide better service.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented service, because when I get the results for a search, I skim over a few websites by opening them. To get back from these websites to the result list, I need a state.",
+        "answer_feedback": "In case one is opening a website for skimming that could possibly be done in a new tab, this would be faster as then this could be connectionless.\u00a0 As we are just skimming it, in case some information from that website is lost, it should not be an issue so connectionless services will be better.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "A connection-oriented service (e.g. TCP) is required, which establishes and maintains the connection to transfer the information which then gets acknowledged and releases the connection once finished. A connectionless service (e.g. UDP) does not require a handshake and sends data without acknowledgements.",
+        "answer_feedback": "The response does not explain the requirement based upon the given scenario.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service.\nIt is mentioned above that the query need to be adjusted by the results of the first few websites.\nHowever connectionless service has no connection teardown phase, so the adjustment is not possible.",
+        "answer_feedback": "The query is readjusted by the user based upon the results obtained in the previous search, for example, the user enters specific words he is searching for which he got from the previous search results so the need for connection-oriented does not arise.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "- Distributed routing \nThe network needs time to converge to the optimum due to its distributed way, so there is\na lower resource utilization.\n\n- Centralized routing\nIf the centralized entity fails, the whole system and network fails.",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service, since the process is iterative and the next step needs the information from previous step.",
+        "answer_feedback": "By iterative, it is meant that the user searches for information, based upon the results obtained he/she will input a new query, for example with modified keywords, so this query and the previous query submission will be independent.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service is better.",
+        "answer_feedback": "The response is incorrect and does not provide an explanation.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Software-defined Networking (SDN) introduces separate control and data planes to manage network flows. Please explain the responsibilities of each plane in 1-2 sentences. Further, name two tasks the SDN controller takes care of. ",
+        "reference_answer": "Control Plane: The control plane is logically centralized, but can be physically distributed\n(multiple coordinating control servers for higher availability and scalability).\nOne of the following responsibilities  should be given:\n\u25cf decides the route for the packet/data\n\u25cb Control servers manage the network graph, define routes, and update the\nflow tables of connected switches.\n\u25cf handles unprocessed packets coming in from the data plane\nData plane: Responsible for packet forwarding. Individual switches just execute\nactions according to their flow tables decided upon by the control plane.\n\nThe following are the tasks taken care of by the controller:\n\u25cf Configuration of forwarding tables\n\u25cf Injecting packets\n\u25cf Events from switch (packet-in)\n\u25cf Collection/Monitoring of traffic statistics\n\u25cf Discovery of topology\n\u25cf Inventorying what devices are within the network and the capabilities of each device\n\u25cf Interfaces with control logic (control \u201capplication\u201d) via the northbound interface(s)\n\u25cf Implements a southbound interface to interact with the data plane.\n\u25cf Implements the control plane.",
+        "provided_answer": "Replication: \nClients need to implement the OpenFlow standard in order to use the slave. Otherwise only primary will be used and thus has higher load.\n\nPartitioning: \nIntroduces overhead because Control planes have to coordinate decisions. Preserving consistency is not an easy task.",
+        "answer_feedback": "The task is to state the control and data plane's responsibilities, including two roles of SDN controller instead of explaining replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service.\nIt is mentioned above that the query need to be adjusted by the results of the first few websites.\nHowever connectionless service has no connection teardown phase, so the adjustment is not possible.",
+        "answer_feedback": "The query is readjusted by the user based upon the results obtained in the previous search, for example, the user enters specific words he is searching for which he got from the previous search results so the need for connection-oriented does not arise.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "A connection oriented service since iterations can be seen as states. First searching for the desired stuff, analyzing and narrowing the search until the information is found (disconnect).",
+        "answer_feedback": "There is no need to maintain a\u00a0persistent state between subsequent questions.\u00a0By iterative, it is meant that the user searches for information, based upon the results obtained he/she will input a new query, for example with modified keywords, so this query and the previous query submission will be independent.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "The control plane can be distibuted or centralized. \nDistributed needs multiple steps to converge to a perfect solution.\nCentralized needs to share the path with the router.",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "Reactive Routing: A lot of requests will be made to the controller (and control network), because of every unknown destination will result in a controller request. \n\nProactive Routing: Flow tables in switches/routers may be very big, while the size is limited this can result in problems.",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "The answer is connection-oriented. An iterative search with a response is required. Only connection-oriented can communicate back.",
+        "answer_feedback": "The question states that an iterative process of refining the query based on the results from the previous search so connectionless service will also work fine. Connection-oriented can be used once the desired website is found but during skimming, this will cause an overhead.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented(?)",
+        "answer_feedback": "Incorrect and no explanation provided.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use connection-oriented because it will need a two-way synchronization of segment counters.  The paket will be send in several packet and will be pack together after the receive.",
+        "answer_feedback": "The role of segmentation is not clear in this scenario.\u00a0our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather than establishing a time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection-oriented service\nBecause it can offer the no loss, no duplication and no sequencing error service, and provide flow control at the same time. For an iterative process to have results and a skim of the first few websites, connection-oriented service can provide a more successful and precise result with less time and fewer errors compared with connectionless service.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented severvice, because the iterative depends on the shown results and a skim of the first websites ,but  connectionless networks have no connection establishment phase.",
+        "answer_feedback": "For skimming the results, one can still make use of connectionless service, further if one would initiate a connection with every website you skim, that would incur a lot of overhead",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "Connection ortiented, since your information comes from the searches from few websites. You need to be connected to them in order to find the information you are looking for.",
+        "answer_feedback": "We only need to skim these first few websites, so connection-oriented service is not a must.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Name the two modes of control plane distribution and name one downside for each of them. ",
+        "reference_answer": "Two modes of physical distribution of control plane and associated drawbacks are:\nReplication\n\u25cf Issue of scalability\n\u25cf More resources, more cost\n\u25cf Wastage of resources as the replicated node is on standby and no actual load\ndistribution occurs.\n\u25cf The problem to keep the data consistent in the replicated node is hard and complex.\nPartitioning\n\u25cf Raises issues similar to P2P networks\n\u25cf Knowledge about neighborhood\n\u25cf Coordination and consistency\n\u25cf Lower availability",
+        "provided_answer": "Physically distributed controller: Has the downside that no standard way of distribution is defined.\n\nLogical centralization: Makes the implementation of the controller hard.",
+        "answer_feedback": "The response is not related to the question. The two modes are replication and partitioning.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "The answer is connection-oriented. An iterative search with a response is required. Only connection-oriented can communicate back.",
+        "answer_feedback": "The question states that an iterative process of refining the query based on the results from the previous search so connectionless service will also work fine. Connection-oriented can be used once the desired website is found but during skimming, this will cause an overhead.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It would be better to use a connection-oriented service to make sure, that possible errors are corrected by the system. In this case, reliability of connection-oriented service is more important than a fast transmission of data, as offered by connectionless service.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "In an SDN, switches maintain a pipeline of flow tables and a meter table. Summarize their respective functions in one sentence each. ",
+        "reference_answer": "Meter table: collects flow statistics or contains meter entry per flow (0.25) which is taken into account by the controller for management of the network like QoS operation(rate-limiting being one of them).\nFlow pipeline: consists of flow tables that contain \u201crules\u201d or fields (0.25) for packet forwarding(0.25) /actions to be taken on the packets or in other words it implements the\nrouting logic in the switch",
+        "provided_answer": "Switches implement the data plane which allows packet forwarding. Typical multi-layer switches use forwarding based on layer 2-4 headers. Hardware switches support fast matching and Software switches connect multiple virtual machines to the physical interface of the host. Hybrid switches implement the SDN and L2/L3 forwarding.",
+        "answer_feedback": "The question asked for the different types of table functionality, not about different types of switches.",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.75,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "I would use a connection-oriented service, because I need my data to be sent with the exact order I sent them and with the lowest possible loss. Connection-oriented establishes a connection between the users and makes it easier for this to happen.",
+        "answer_feedback": "While the stated points are true and maybe good to have once we have reached our desired website but our goal for the current scenario is to skim and reach the desired website first, which should ideally be quick when one is jumping from one website to another rather establishing time-consuming connection and teardown with each, in such case connectionless is a better option for faster access.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following scenario: You are browsing the web for a very specific and important piece of information. However, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. Is it better to use a connection-oriented or connectionless service for your communication in this scenario? Explain your answer in 1-4 sentences.",
+        "reference_answer": "Connectionless, because you will communicate with various partners (websites) for short periods of time. If you would initiate a connection with every website you skim, that would incur a lot of overhead in the connecting and disconnecting phase, just to have very short data transfers.",
+        "provided_answer": "It is better to use a connection-oriented service for this, which can keep the state of the iterative process.",
+        "answer_feedback": "By iterative, it is meant that the user searches for information, based upon the results obtained he/she will input a new query, for example with modified keywords, so this query and the previous query submission will be independent.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "In an SDN, switches maintain a pipeline of flow tables and a meter table. Summarize their respective functions in one sentence each. ",
+        "reference_answer": "Meter table: collects flow statistics or contains meter entry per flow (0.25) which is taken into account by the controller for management of the network like QoS operation(rate-limiting being one of them).\nFlow pipeline: consists of flow tables that contain \u201crules\u201d or fields (0.25) for packet forwarding(0.25) /actions to be taken on the packets or in other words it implements the\nrouting logic in the switch",
+        "provided_answer": "Multi-layer switches: Forwarding based on layer 2-4 headers.\nHardware switches: Hardware support for fast matching.\nSoftware switches: Connect multiple virtual machines to physical interface of host. \nHybrid switches: Implement SDN and standard L2/L3 forwarding.",
+        "answer_feedback": "The response is incorrect because the question requirement is to describe the functions of meter and flow tables while the response states different types of switches.",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.75,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "In an SDN, switches maintain a pipeline of flow tables and a meter table. Summarize their respective functions in one sentence each. ",
+        "reference_answer": "Meter table: collects flow statistics or contains meter entry per flow (0.25) which is taken into account by the controller for management of the network like QoS operation(rate-limiting being one of them).\nFlow pipeline: consists of flow tables that contain \u201crules\u201d or fields (0.25) for packet forwarding(0.25) /actions to be taken on the packets or in other words it implements the\nrouting logic in the switch",
+        "provided_answer": "typically multi-layer switches: forwarding based on layer 2-4 headers\n\nhardware switches: hardware support for fast matching\n\nsoftware switches: connecting of multiple virtual machines to physical interface of host\n\nhybrid switches: implementation of SDN and standard L2/L3 forwarding",
+        "answer_feedback": "The question asked for the different types of table functionality, not about different types of switches.",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.75,
+        "normalized_score": 0.0
+    }
+]

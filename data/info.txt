@@ -1,0 +1,32 @@
+train:
+===================================
+Correct: 1053
+Partially Correct: 565
+Incorrect: 82
+Total: 1700
+-----------------------------------
+
+validation:
+===================================
+Correct: 262
+Partially Correct: 137
+Incorrect: 28
+Total: 427
+-----------------------------------
+
+unseen_questions:
+===================================
+Correct: 247
+Partially Correct: 190
+Incorrect: 42
+Total: 479
+-----------------------------------
+
+unseen_answers:
+===================================
+Correct: 240
+Partially Correct: 114
+Incorrect: 21
+Total: 375
+-----------------------------------
+

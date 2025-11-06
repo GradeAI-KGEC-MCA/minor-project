@@ -1,0 +1,254 @@
+[
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "CDMA\nIn CDMA, all the stations can transmit data simultaneously. It allows each station to transmit data over the entire frequency all the time. Multiple simultaneous transmissions are separated by unique code sequence. Each user is assigned with a unique code sequence. which means the rate of data is high.",
+        "answer_feedback": "The question asks for the type of encoding to be used, not for access types.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "The users can use both Manchester or differential Manchester encoding. The reason behind as fol:\n1. Both of them uses .5 bit per Baus so channel capacity is reduced.\n2. Less susceptible to noise due to interfearance.",
+        "answer_feedback": "The binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider the following network topology from the lecture:With routing, we want to find the best path for our packets. For this, we first need to define a metric to evaluate the quality of a path. One possible choice could be the current load (i.e. the current utilization in terms of sent packets/bytes) on this path. Assume that A wants to send data to G, could this routing strategy cause any problems at the receiver end? Please explain your answer in 1-2 sentences.",
+        "reference_answer": "Yes, using the current load to find the best path can lead to fluctuations/oscillations when there is more than one path between any pair of end systems in the network (here: CF and EI). This can cause packet reorderings at the receiving side.",
+        "provided_answer": "Using current load could be not the lowest cost path.",
+        "answer_feedback": "But this is no problem at the receiver end",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "TCP should be used because it has a bidirectional bitstream. Furthermore it provides a flow control in order to handle too musch traffic.",
+        "answer_feedback": "The response is not related to the theme of the encoding type.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Write-down all addresses in Class A networks that are reserved.",
+        "reference_answer": "126 Class A nets can be addressed in classful IP addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in Class A)",
+        "provided_answer": "0.0.0.0 and 127.255.255.255",
+        "answer_feedback": "The addresses have a range: 127.0.0.0 - 127.255.255.255\nMissing Loopback",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "As there is no global clock, I would not suggest binary encoding. As there is much traffic I would choose Differential Manchester Encoding, rather than the normal one which is more susceptible to noise.",
+        "answer_feedback": "As the perfect clocks are already provided, self-clocking is not required.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What happens to the \"collision domain diameter\" if you use CSMA / CD and increase the speed of a network by a factor of 10, eg from 10Mb / s to 100Mb / s (all else being equal)?",
+        "reference_answer": "Diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "provided_answer": "Then the maximum segment length becomes 2000m, which is too long for collision recognition.",
+        "answer_feedback": "The collision diameter decreases by a factor of 10 rather than becoming 2000m for a collision to be still detected.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Write-down all addresses in Class A networks that are reserved.",
+        "reference_answer": "126 Class A nets can be addressed in classful IP addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in Class A)",
+        "provided_answer": "0.0.0.0\u00a0\n127.255.255.255\nThe first adress and the last adress of each subnet are reserved",
+        "answer_feedback": "The addresses have a range: 127.0.0.0 - 127.255.255.255\nMissing Loopback",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "State at least 4 of the differences shown in the lecture between the UDP and TCP headers.",
+        "reference_answer": "Possible Differences :\nThe UPD header (8 bytes) is much shorter than the TCP header (20-60 bytes)\nThe UDP header has a fixed length while the TCP header has a variable length\nFields contained in the TCP header and not the UDP header :\n-Sequence number\n-Acknowledgment number\n-Reserved\n-Flags/Control bits\n-Advertised window\n-Urgent Pointer\n-Options + Padding if the options are\nUDP includes the packet length (data + header) while TCP has the header length/data offset (just header) field instead\nThe sender port field is optional in UDP, while the source port in TCP is necessary to establish the connection",
+        "provided_answer": "1. UDP is connectionless and the TCP is connection oriented.\n2. UDP does not control the errors, this means that if there was a with the order of the packets or one of them got lost, the UDP won\u00b4t correct anything and will send it exactly the same to the application layer. Instead, the TCP corrects all the errors and transmit the packets reliably.\n3. The UDP needs few resources. The TCP instead has higher resource requirements for buffering, status information and timer usage.\n4. The UDP transmission is fast because it is connectionless. The TCP instead needs to wait for the connection establishment and the disconnection to send any message.",
+        "answer_feedback": "The response is incorrect as the question asked for the differences between headers, but the answer enumerates differences between TCP and UDP protocol instead.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "State at least 4 of the differences shown in the lecture between the UDP and TCP headers.",
+        "reference_answer": "Possible Differences :\nThe UPD header (8 bytes) is much shorter than the TCP header (20-60 bytes)\nThe UDP header has a fixed length while the TCP header has a variable length\nFields contained in the TCP header and not the UDP header :\n-Sequence number\n-Acknowledgment number\n-Reserved\n-Flags/Control bits\n-Advertised window\n-Urgent Pointer\n-Options + Padding if the options are\nUDP includes the packet length (data + header) while TCP has the header length/data offset (just header) field instead\nThe sender port field is optional in UDP, while the source port in TCP is necessary to establish the connection",
+        "provided_answer": "TCP Header: 1.Reliable bidirectional in-order byte stream 2.Connections established and torn down 3.Multiplexing/ demultiplexing 4.Ports at both ends 5.End-to-end flow control 6.Congestion avoidance UDP 1.UDP is a simple transport protocol 2.Unreliable 3.Connectionless 4.Message-oriented 5. no flow control 6. no error control",
+        "answer_feedback": "The question requirement is to identify differences between TCP and UDP headers instead of general differences.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Let us assume that you flip a coin 6 times where the probability of heads (H) showing up is 0.6. Please arrange the following events in the increasing order of their likelihood (i.e., least probable \u2192 most probable): \u25cf Event A: you see at least three H\u2019s \u25cf Event B: you see the sequence HHHTTT \u25cf Event C: you see exactly three H\u2019s Include justification in your answer headers.",
+        "reference_answer": "The correct sequence is BCA , where B is the least probable. One of the following justifications should be given:\n\t\t\u25cf Event B is a subset/part/special case of C, and C is a subset/part/special case of A\n\t\t\u25cf Event B is more specific/strict than C and C is more specific/strict than A\n\t\t\u25cf An actual, correct calculation of the probabilities:\n\t\t\u25cb P(B) = 0.6 * 0.6 * 0.6 * 0.4 * 0.4 *0.4 = 0.6^3 *0.4^3 = 0.013824 \n\t\t\u25cb P(C) = (6 choose 3) * P(B) = 0.27648 \n\t\t\u25cb P(A) = P(C) + P(Y=4) + P(Y=5) + P(Y=6) = 1 - P(Y=0) - P(Y=1) - P(Y=2)\n\t\t= (6 choose 3) * 0.6^3 * 0.4^3 + (6 choose 4) * 0.6^4 * 0.4^2 +(6 choose 5) *\n\t\t0.6^5 * 0.4 + (6 choose 6) * 0.6^6\n\t\t= 0.27648 + 15 * 0.020736 + 6 * 0.031104 + 1 * 0.046656\n\t\t= 0.8208 \n\t\t\u25cb The answer may be rounded to up to 2 decimal places, e.g. P(B) = 0.01 or\n\t\tP(B) = 0.014\n\t\t\u25cb It is also sufficient to give a formula without the actual calculation, if it is apparent that P(B) less than P(C) less than P(A), e.g. by stating P(C) = 20 * P(B)",
+        "provided_answer": "Event C, Event A and Event B",
+        "answer_feedback": "The stated order of events is incorrect. The correct order is B, C, A. Additionally, the response lacks a justification regarding all event probabilities.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "The participant, who sends the ACK, has to have Data, which he wants to send. If there is no Data to \"biggyback\" the ACK on, the participant will wait infinitly for data to send with the ACK and therefore the piggyback extension would not work.",
+        "answer_feedback": "The response is incorrect because a dedicated timer can be used on the receiver side to overcome the above problem of no data on the receiver side. After the timeout, an acknowledgment is sent independently.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider a single server queueing system with a buffer of size 10. Let us assume that 9 packets arrive per second and 10 packets are served per second on an average. Assume you monitor the system for exactly one minute after the system reaches equilibrium. How many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? You need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "Since we have a buffer size (N) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. Therefore, we first calculate the probability of the system being full/having 10 packets in the queue. This is also called \u201cblocking probability\u201d or P_B.\nP_B = ((1 - utilization) * utilization^N) / 1 - utilization^(N+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nAlternatively to the blocking probability, it is also valid to directly calculate P(X less than 10) = (1 -P_B) by summing up the probabilities for 0, 1, \u2026, 9 packets to be in the queue. To calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with P(X less than 10) or the complement of P_B (0.25p) = 60 * (1-P_B) = 56.9512 seconds",
+        "provided_answer": "Less than 60 seconds, more than 50 seconds (50-60 seconds),\nbecause the buffer size has 10 and 9 packets go in 10 packets go out. The buffer size of 10 is never exceeded.\n\n- Steps involved :\n1.Arrival process: How customers/requests arrive?(time between requests ,inter-arrival time)\n2.Service process: How much demand do requests generate?(Service time of single requests)\n3.How many places in queue?\n4.How many service stations?\n5.How are queues processed?(First-come-first-serve (FCFS), shortest job first, priority queue, and so on)",
+        "answer_feedback": "The required justification is missing and a broad time interval is provided but the precise time in seconds was expected.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "Differential Manchester encoding should be used because it is overall more complex. \n\nSimilarly to Manchester encoding, DM encoding takes advantage of splitting the interval into two, where a voltage level shift takes place (either from high voltage to low voltage or vice versa). However, Manchester encoding is still too similar to binary encoding in that a 1 will always be equivalent to a voltage shift from high --> low and a 0 will always be low --> high voltage. Instead, if the voltage shift occurs between intervals (either high -> low or low -> high), a 0 will be encoded. Likewise, if there is no voltage shift between intervals then a 1 is encoded. By comparing the current interval to the previous interval's voltage level, a more accurate encoding technique can be realized.\n\nAnd unlike the binary encoding system, DM encoding does not rely on binary voltage levels to encode a bit stream. Instead, merely a change in voltage level between intervals encodes the bit stream. (Ex. A lack of voltage level change between the first and second interval would mean that the second bit in the stream is a 1) Therefore, because the voltages only need to differ between intervals, the bit stream is less susceptible to noise/error.",
+        "answer_feedback": "The preference is always for a simple solution. Further self-clocking is not required here and manchester provides lower bandwidth utilization which can further complicate the congestion problem.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Transparent bridges manage a bridge table for the forwarding process. Please describe what information the table holds and how it is modified during the backwards learning phase. How is the table used in the forwarding process and what is one benefit of that? Please answer the question in 2-5 sentences. ",
+        "reference_answer": "1.A mapping between destinations/stations (MACs) and outgoing LAN interfaces.\n2.This table is initially empty and received packages are flooded on every line. When a bridge receives a frame (as the bridge runs in promiscuous mode it listens in on all the traffic arriving at its LAN links) with source address Q on LAN L, it adds the timestamped entry \u201cQ can be reached over L\u201d to the table and the next time a packet with destination Q arrives, it is forwarded on link L. The time-stamp is used to update or purge old entries. Therefore, it learns by observing the incoming traffic.\n3.To do selective forwarding instead of flooding. \n4.i)less duplication/unnecessary flooding is prevented.\nii)less congestion.\niii)better bandwidth usage than flooding.",
+        "provided_answer": "Transparent bridges store destination addresses and start with an empty forwarding table.This table is populated by using backward learning (once the bridge receives a frame from an unknown source over router x, it stores the address information of the source). Whenever a frame is sent to an unknown destination (no table entry), that frame is then flooded and the destination responds to the bridge to create a table entry. Transparent bridges are invisible to other components during the forwarding process, thus simplifying other components.",
+        "answer_feedback": "The response has the following errors a) Transparent bridges store not just the destination but also the corresponding outgoing LAN along with the timestamp. b) the stated backward learning process is incorrect. c)Yes, the Transparent bridges are invisible but that is not the benefit derived from using selective forwarding instead of flooding.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider a single server queueing system with a buffer of size 10. Let us assume that 9 packets arrive per second and 10 packets are served per second on an average. Assume you monitor the system for exactly one minute after the system reaches equilibrium. How many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? You need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "Since we have a buffer size (N) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. Therefore, we first calculate the probability of the system being full/having 10 packets in the queue. This is also called \u201cblocking probability\u201d or P_B.\nP_B = ((1 - utilization) * utilization^N) / 1 - utilization^(N+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nAlternatively to the blocking probability, it is also valid to directly calculate P(X less than 10) = (1 -P_B) by summing up the probabilities for 0, 1, \u2026, 9 packets to be in the queue. To calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with P(X less than 10) or the complement of P_B (0.25p) = 60 * (1-P_B) = 56.9512 seconds",
+        "provided_answer": "If the equilibrium has been already reached then assuming that the packets during this 1 minute are evenly distribute, the system would be most of the time In the state where less than 10 packets wait In the queue.\nwe calculate the probability that there are packets P(0) for 0 -9 using this (1-r)^n-1\nthen we",
+        "answer_feedback": "The first step of calculating probabilities for 0, 1, \u2026, 9 packets to be in the queue is correct, but it is incomplete. Additionally, the final step of multiplying it with the time frame to receive the expected number of seconds is missing in the response.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Write-down all addresses in Class A networks that are reserved.",
+        "reference_answer": "126 Class A nets can be addressed in classful IP addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in Class A)",
+        "provided_answer": "Class A:\n0.0.0.0. - 127.255.255.255",
+        "answer_feedback": "Not all addresses in Class A are reserved",
+        "verification_feedback": "Incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "Every transmission must contain an ACK.",
+        "answer_feedback": "The response does not answer the underlying requirement for piggybacking. A duplex connection is needed, so that data and acknowledgments can be sent both ways.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "The receiver must have data to send back to the sender so he can attach the ACK information to that data. If he has no data to send, the service can be jammed. To prevent this, a receiver timeout can be added so that after the timeout has expired and no data was sent, an ACK packet is sent independently",
+        "answer_feedback": "The response does not answer the underlying requirement for piggybacking. The response states a possible situation in piggybacking and how to overcome it.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "The Differential Manchester Encoding might be the best option here. Both Manchester and Differential Manchester Encoding have a self-clocking feature which enables users to know if a tansmission is happening at the moment (every clock cycle a change if there is an active transmission). The Differential variant has a low susceptibility to noise which might be beneficial in a multi-user environment because it might lower the chances of e.g. retransmissions.",
+        "answer_feedback": "The binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What happens to the \"collision domain diameter\" if you use CSMA / CD and increase the speed of a network by a factor of 10, eg from 10Mb / s to 100Mb / s (all else being equal)?",
+        "reference_answer": "Diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "provided_answer": "the collision domain diameter will be increased.",
+        "answer_feedback": "The response is incorrect as it states that the diameter increases. Instead, for collisions to be detected, the diameter decreases by a factor of 10.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "Both parties have to advertise their window sizes to each other to avoid the received data to be thrown away (so the receiving buffer was full). Therefore, they need to introduce a new field to the frames which holds this value. Alternatively, they agree upon first communication to some static window size and afterwards send their data (and hope the free buffer sizes of both remain the same). In both cases it would be recommandable not to send huge data chunks upon first communication, because both parties don't know the window sizes of the other one yet. With each frame they send a sequence number (even if no data is sent, so the receiver is able to acknowledge it), the ACK-number (even if no new data has been received, so the receiver can use this as base for their sequence number), and lastly the window size.",
+        "answer_feedback": "The response is incorrect. All the stated points are correct but are related to the window sliding mechanism in general and how the initial setup occurs.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Assume you have a local network with 3 users that are all interconnected and have perfect clocks. Typically the network is often congested as all users generate more traffic than the link\u2019s capacities. Which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? Give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "Binary Encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. Additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. Therefore, self-clocking / clock recovery is not as necessary. Simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "DIfferential Manchester encoding should be used, since all users have perfect code and all frequency modulation is utilized (Users have access to selected frequencies at all times)",
+        "answer_feedback": "The response is incorrect as under the given scenario binary encoding is better suited.",
+        "verification_feedback": "Incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "Consider a single server queueing system with a buffer of size 10. Let us assume that 9 packets arrive per second and 10 packets are served per second on an average. Assume you monitor the system for exactly one minute after the system reaches equilibrium. How many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? You need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "Since we have a buffer size (N) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. Therefore, we first calculate the probability of the system being full/having 10 packets in the queue. This is also called \u201cblocking probability\u201d or P_B.\nP_B = ((1 - utilization) * utilization^N) / 1 - utilization^(N+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nAlternatively to the blocking probability, it is also valid to directly calculate P(X less than 10) = (1 -P_B) by summing up the probabilities for 0, 1, \u2026, 9 packets to be in the queue. To calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with P(X less than 10) or the complement of P_B (0.25p) = 60 * (1-P_B) = 56.9512 seconds",
+        "provided_answer": "Assuming 9 packets arrive each second and 10 are served. On average the buffer should never be full leading to a 60s time where there are less than 10 packets in the queue.",
+        "answer_feedback": "The stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time. Therefore, the stated time is also incorrect.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "A relieable in-order delivery of packets (like data link layer 2 in OSI)\n\nAt least an acknowledged connectionless service or an Acknowledged connection-oriented service (for feedback if the packets / frames are received).",
+        "answer_feedback": "The response is not directly related to the piggybacking but to sliding window protocol in general.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "WHICH PROPERTY of spanning trees makes them appealing for broad- and multicasting? EXPLAIN how you can modify Link State Routing to construct a spanning tree for multicasting.",
+        "reference_answer": "Property: There is a single unique path between every pair of nodes in the tree. Alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. This means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nSpanning Tree with Link State Routing: Each intermediate system knows which multicast groups it belongs to, but initially doesn\u2019t know which other IS belong to the groups. Therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with Prim or Kruskal)",
+        "provided_answer": "Spanning trees allows to reach all other nodes of a network with a small subset of links. A spanning tree therefore \"provides\" information for broad- and multicasting to send the packets through the \"best\" route (e.g. minimum hops).",
+        "answer_feedback": "The response incorrectly describes the reason why a spanning tree is attractive for broadcast and multicast. Although the number of links is reduced, they also need to connect without loops, reducing duplicates. The modification related to the link state algorithm to construct a  multicast spanning tree is not provided.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What happens to the \"collision domain diameter\" if you use CSMA / CD and increase the speed of a network by a factor of 10, eg from 10Mb / s to 100Mb / s (all else being equal)?",
+        "reference_answer": "Diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "provided_answer": "The collision Domain Diameter will be increased to 10times compared with the distance in 10Mb/s.",
+        "answer_feedback": "The diameter is decreased by a factor of 10 instead of increased.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "question": "What requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "Piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or Frames must contain additional field for acknowledgement.",
+        "provided_answer": "The initial SeqNo needs to be known + the next SeqNo and the next ACK-SeqNO needs to be known.\nOtherwise, Piggybacking is not possible.",
+        "answer_feedback": "The response is incorrect as the main requirement for piggybacking is a two-way/duplex channel. The points stated in the response are an implementation detail of the sliding window protocol.",
+        "verification_feedback": "Incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    }
+]

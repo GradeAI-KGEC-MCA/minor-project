@@ -1,4 +1,4 @@
-data/
+data/original
 model/results/
 model/bert_grader/
 __pycache__/
