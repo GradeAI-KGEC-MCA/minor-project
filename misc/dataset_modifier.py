@@ -2,7 +2,8 @@ import json
 import random
 folders = {
     'incorrect': './data/updated/incorrect/',
-    'correct': './data/updated/correct/'
+    'correct': './data/updated/correct/',
+    'combined': './data/updated/combined/'
 }
 file_names = [
     'train',
@@ -72,14 +73,13 @@ def separate_correct_incorrect(data):
     return {'correct':correct, 'incorrect': incorrect, 'partially_correct': partially_correct}
 
 def save_json(data, path):
-    inp = input('Do you want to save train.json? [Y/n]: ').lower()
+    inp = input('Do you want to save? [Y/n]: ').lower()
     if inp in ['', 'y', 'yes']:
         with open(path, 'w', encoding='utf8') as f:
             json.dump(data, f, indent=4)
-        print('train.json saved!')
+        print('data saved!')
     else: print('Operation Terminated')
     
-
 def get_json(path):
     with open(path, 'r', encoding='utf8') as f:
         return json.load(f)
@@ -129,14 +129,21 @@ def format_data(data: list[dict]) -> list[dict]:
     print(f'count: {count_data(formatted)}')
     return formatted
 
-for file in file_names:
-    print(file, ':\n=========================================================')
-    correct_data = format_data(get_json(folders['correct']+file+'.json'))
-    incorrect_data = format_data(get_json(folders['incorrect']+file+'.json'))
+def lower_case_data(data):
+    for record in data:
+        for key, value in record.items():
+            if isinstance(value, str):
+                record[key] = value.lower()
+    return data
 
-    data = combine_data(correct_data, incorrect_data)
+print(__name__, '\n\n')
+if __name__ is 'main':
+    for file in file_names:
+        path = folders['combined'] + file + '.json'
+        data = get_json(path)
+        data = lower_case_data(data)
+        save_json(data, path)
 
-    save_json(data, f'./data/updated/combined/{file}.json')
 
-    print(count_data(data))
+    
 
