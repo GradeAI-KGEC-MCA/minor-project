@@ -3,7 +3,8 @@ import random
 folders = {
     'incorrect': './data/updated/incorrect/',
     'correct': './data/updated/correct/',
-    'combined': './data/updated/combined/'
+    'combined': './data/updated/combined/',
+    'partially_correct': './data/updated/partially_correct/',
 }
 file_names = [
     'train',
@@ -11,6 +12,8 @@ file_names = [
     'unseen_questions',
     'unseen_answers'
 ]
+
+original_path = 'data/original/'
 
 def quicksort(data, low=0, high=None):
     if high is None:
@@ -44,6 +47,8 @@ def add_max_scores(data):
     for record in data:
         record['max_score'] = max_scores[record['question']]
 
+    return data
+
 def normalize_score(data):
     for record in data:
         record['normalized_score'] = round(record['score'] / record['max_score'], 2)
@@ -76,10 +81,10 @@ def save_json(data, path):
     inp = input('Do you want to save? [Y/n]: ').lower()
     if inp in ['', 'y', 'yes']:
         with open(path, 'w', encoding='utf8') as f:
-            json.dump(data, f, indent=4)
+            json.dump(data, f, indent=4, ensure_ascii=False)
         print('data saved!')
     else: print('Operation Terminated')
-    
+
 def get_json(path):
     with open(path, 'r', encoding='utf8') as f:
         return json.load(f)
@@ -104,6 +109,12 @@ def get_questions(data):
     
     return list(questions.values())
 
+def remove_id(data):
+    for record in data:
+        record.pop('id', None)
+
+    return data
+
 def combine_data(*args):
     combined = []
     for lst in args:
@@ -117,17 +128,18 @@ def format_data(data: list[dict]) -> list[dict]:
 
     for record in data:
         formatted.append({
-            'question': record['question'],
-            'reference_answer': record['reference_answer'],
-            'provided_answer': record['provided_answer'],
-            'answer_feedback': record['answer_feedback'],
-            'verification_feedback': record['verification_feedback'],
+            'id': record['id'],
+            'question': record['question'].lower(),
+            'reference_answer': record['reference_answer'].lower(),
+            'provided_answer': record['provided_answer'].lower(),
+            'answer_feedback': record['answer_feedback'].lower(),
+            'verification_feedback': record['verification_feedback'].lower(),
             'max_score': record['max_score'],
             'normalized_score': record['normalized_score']
         })
 
     print(f'count: {count_data(formatted)}')
-    return formatted
+    return lower_case_data(formatted)
 
 def lower_case_data(data):
     for record in data:
@@ -137,13 +149,17 @@ def lower_case_data(data):
     return data
 
 print(__name__, '\n\n')
-if __name__ is 'main':
+if __name__ == '__main__':
+
     for file in file_names:
-        path = folders['combined'] + file + '.json'
-        data = get_json(path)
-        data = lower_case_data(data)
-        save_json(data, path)
+        data = get_json(original_path+file+'.json')
+        data = quicksort(data)
+        data = add_max_scores(data)
+        data = normalize_score(data)
+        data = format_data(data)
+        # data = remove_id(data)
+        data = separate_correct_incorrect(data)
 
-
-    
-
+        save_json(data['correct'], folders['correct']+file+'.json')
+        save_json(data['incorrect'], folders['incorrect']+file+'.json')
+        save_json(data['partially_correct'], folders['partially_correct']+file+'.json')
