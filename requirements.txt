@@ -8,3 +8,6 @@ datasets
 kagglehub
 openpyxl
 transformers
+nltk
+spacy
+sentence_transformers
