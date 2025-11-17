@@ -1,0 +1,822 @@
+[
+    {
+        "id": "3644ee4990c34db783b36dec7b2861e8",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "the bit oriented protocol should be used, as the character oriented protocol requires additional time due to the insertion of dles into the frame and convert to the right encoding. in addition, the count oriented protocol leads to desynchronisation in the event of a transmission error and is therefore not reliable enough for everyday use.",
+        "answer_feedback": "the provided response is not related to the theme of the question which is encoding type.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "55a6626b8a144422852afca038d80003",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "for this network i suggest to use the differential manchester encoding: this encoding technique is robust in clock recovery and hence offers synchronization facility at receiver because a transition is guaranteed at least once every bit. in addition, it is less error-prone in noisy environments.",
+        "answer_feedback": "the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "d36f27d02c7b49de807f97cda62f72de",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "differential manchester encoding is the best option because of its good self-clocking feature which is important in a congested network. it also provides error detection.",
+        "answer_feedback": "the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "f5306946ed014b389cac891103e4b73d",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "the use of the differential manchester encoding (dme) would be applicable in this situation. it has a good self-clocking feature which allows a good way to identify bits. furthermore it has a low susceptibility to noise because dme only records the polarity of signals. this is great when there is a lot of traffic on a link.",
+        "answer_feedback": "incorrect response as we already have perfect clock manchester is not required. secondly, binary encoding provides better bandwidth utilization.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "97dde77e901546d88794647115ba7aa3",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "manchester encoding",
+        "answer_feedback": "incorrect and no reasoning provided. the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "1dc38fb8aabf48eda7717e10bc41c318",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "differential manchester technique. this is because the clocks and data signals combine to form a single synchronizing data stream of both 1 and 0 levels.",
+        "answer_feedback": "the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "83db8d63d69347b286d6724d606676b2",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "manchester encoding.\n1. because of the self-clocking there is no need to have specific line to transmit the synchronisation signal.\n2. manchester encoding is less complex than differential manchester encoding, and convenient enough for local network with 3 users.",
+        "answer_feedback": "the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "7e046d7f11e04cccac67a5ed603f8893",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "the sliding window technique should be used in this scenario for these reasons:\n1) the network is often congested. the sw has better capability for dealing with that by better utilizing channels / generating more throughput.\n2) its a small network of 3 users meaning that increasing complexity (buffer demand) does not scale that much, neutralizing one of the main drawbacks of sw",
+        "answer_feedback": "the provided response is not related to the type of encoding.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "1c80a2ec4cfe4522b4f908ea297902ae",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "differential  manchester  encoding",
+        "answer_feedback": "incorrect and no reasoning provided. the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "35a641157a1048e7bcef089a3c7cfebd",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "differential manchester encoding should be used, because \n- it is not susceptible to noise, it depends on signal polarity, not absolute values\n- it has a good self-clocking feature, so it is synchronous, which is useful for when the traffic is greater than the link's capacities.",
+        "answer_feedback": "the correct encoding in this scenario is binary encoding as it provides better band utilization and in this case, there is no requirement for self-clocking.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "19f63f97566741ad961803ea87093519",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "sliding window, because they need a good throughput and good channel utilization. and also they have perfect clocks for buffer.",
+        "answer_feedback": "non-related response, the question asks for the encoding types.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "326325628cbf447485663a4551b474e0",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "provided_answer": "i will choose differential manchester encoding.\nit has good \"self-clocking\" feature and low susceptibility to noise because only the signal’s polarity is recorded; absolute values are irrelevant.",
+        "answer_feedback": "the binary encoding is the better option because of better bandwidth utilization and no self-clocking requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "5218eb0cd9334daaadae5e4ca39d84b4",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "first at second 0, 9 packets arrive, the waiting time for the first packet w1 is not given therefore assumed with 1second. there are now 9 packets in the buffer. at second 1, 9 more packets arrive. the buffer is completely filled with 10 packets, 8 more are dropped.  the packets are starting to be served with an average service rate of 10. at second 2, there are no packets left in the buffer. 9 new ones arrive and are directly served. from now on the buffer won’t fill up again. this means there are 58 seconds with less than 10 packets waiting in the queue.",
+        "answer_feedback": "the stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time. therefore, the stated time is also incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "346a90b4eef6432b8e7e4282736bce5b",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "there should be all the time less than 10 packets because we receive only 9 packets and serve 10 packets. ^^",
+        "answer_feedback": "the stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time. therefore, the stated time (60 seconds) is also incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3cdd7868f7494624972759124051a0ce",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "this is always the case, because the arrival rate (9) is lower than the service rate (10). \nso on average the buffer is always below its maximum capacity of 10.",
+        "answer_feedback": "the stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time. the correct answer is 56.95 seconds.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "830b6d6498ac47b78e1978fbdd83a834",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "the process still changes states when it is in equilibrium. however, the steady-state probability pk to find the process in state k does not change anymore, thus dpk (t )/dt = 0. \n\nin equilibrium, it follows from dpk (t )/dt = 0 that the probability flow, also called flux, into state k equals the probability flow out of state k. this yields the global balance equations:\n(sum starting from k=0 until infinity) => pk =1",
+        "answer_feedback": "the response is incorrect because it states a description of the system's equilibrium state. however, the question requirement is to calculate the number of expected seconds where the system has less than 10 packets waiting in the queue.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3fd2d13384fc4fe2bf49c380f8d5f179",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "1. step:\nqueue: 10 packets\nservice: 10 packets\n\n2. step:\nqueue: 9 packets\nservice: 10 packets\n\n3.step:\nqueue: 9 packets\nservice: 9 packets\n\n4. step:\nqueue: 9 packets\nservice: 9 packets\n\nand so on. if there will always arrive 9 packets per second and the server can serve maximum 10 packets per second, there will never be 10 packets in the queue except in the first step.",
+        "answer_feedback": "the stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time. therefore, the stated time is also incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "d570f4585bb141fb9f8dc81109230f02",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "on average, there are 9 packets in the buffer per second.\nlambda = 9\nt=1\n\np(less than 10 packets in the buffer) = p(0 packets) +...+ p(9 packets) = sum(k=0 to 9)[ 9^k * exp(-9) / k!] = 0,5874\n\n0,5874 * 60s = 35s",
+        "answer_feedback": "the obtained probability for less than 10 packets is incorrect, and so is the time. the idea behind the steps is correct, but the calculation is wrong.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "97c12cf8ebe14102a14a3aae1fc90136",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "for the time interval of 1 minute we have to do the calculation of set of probabilities of number of packets in the queue with every new state of packet arrival and packet processed from the queue. with increasing arrival rate the queue will get more full until it reaches n = 10, after which packet dropping occurs, and consequently the arrival rate decreases. so this way  the p changing from state of p0 till p10. with reduced arrival rate the more packets get processed from the queue and the queue size decreases from p10 until the point arrival rate increases again. so we need to check for the “blocking probability” and “expected number of customers in the system” in order to determine the number of seconds the queue is not full or less than 10 packets in the waiting queue.",
+        "answer_feedback": "yes, it is correct that “blocking probability” needs to be calculated, but neither the calculation steps, probability nor the time is mentioned in the response..",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "47f36542f6114c7aa869cb63e89dd4ef",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "in this case the system will be for the whole time in a state, in which there are less than 10 packets waiting in the queue, due to the fact that there are always more packets processed pro second than arriving.\nutilisation = arrival rate / service rate = 9 pkts/s / 10 pkts/s = 0.9\nn - average number of packets in the system\nn =  utilisation / 1 - utilisation which gives = 9 packets\nwe can also calculate the probability, that the system is full: p_10 = (1-p)*p^10 / (1-p^11) we get 0.05 as a result. because the utilisation ist the same at every time, the probability that the system is full remains equally.",
+        "answer_feedback": "the stated justification is incorrect as the given rates are not constant and can vary through time, so an average needs to be calculated for the given time as was done for p_10. therefore, the stated time is also incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3a43763fa3234bec9703f7197512addd",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "for every seconds, there will be less than 10 packets, since more packets are served than the packets arriving in the queue.",
+        "answer_feedback": "the response implies that the system is waiting for a whole minute which is incorrect as the system is less than full for 56.95 seconds instead.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "c9b4911e671d47c884dcca4b8d6550da",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "9 * 60 = 540 packets arrive in 1 minute\n10 * 60 = 600 packets can be processed in 1 minute\n\nbased on the assumption that the packets arrive uniformly distributed in the minute (i.e. 9 packets per second) and we can process 10 packets per second, this means that the system is busy in 90 % of the time with processing the packets. in 10 % of the time the system has no packets to process. \nsince the system can process more packets in a second than we expect to arrive in a second, the system will be in a state with less than 10 packets waiting in the queue for the whole time.",
+        "answer_feedback": "the description to justify the system waiting time is missing in the response. additionally, the system does not stay in a less than 10 packets state for a whole minute, only 56.95 seconds.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "d79360ccd030479180fcc9c20a06c7f7",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "provided_answer": "assuming a fifo queue, and assuming that the packets arrive and are processed continuously with equal time distribution for each packet within the second:\nservice time: u = 10 packets/second => x1 = 1/10s\narrival rate = 9 packets/second => arrival time = every 1/9s\nbuffer = 10 packets\n\nsince the service time is smaller than the packet arrival time for each packet, and the number of packets arriving per second is smaller than the queue's buffer size, we can assume that in the entire minute, the queue never contains 10 or more packets in it, hence, the queue always has less than 10 packets in it.",
+        "answer_feedback": "the response is incorrect because it is purely based on assumptions. additionally, the arrival and service rates are not constant and vary with time, so the stated argument of the queue never containing 10 packets for an entire minute is invalid.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "733180f9055e4a85b4a4a27305a835d3",
+        "question": "consider the following topology from the exercise. this time, node a wants to distribute a packet using reverse path broadcast (rpb). assume that every is knows the best path to a and also whether they are the next hop of their neighbors on the unicast path to a.please list all the packets which are sent together with the information whether they will be forwarded or dropped at the receiving nodes. use the following notation: (sender, receiver, drop) for dropped and (sender, receiver, forward) for forwarded packets. please group these tuples according to the number of hops the packets have travelled so far. for dropped packets, please specify the reason why the packet has been dropped in a few words.example for the notation:hop 1:(c, a, forward)(c, b, drop) <= describe reason herehop 2:(a, d, drop) <= describe reason here",
+        "reference_answer": "hop 1 :(a, b, forward),(a, c, forward), (a, d, drop) <= reason: remaining neighbors c and f do not use d as the next hop to get to a hop 2 :(b, e, forward),(c, f, drop), <= reason: remaining neighbors d, e, g do not use f as the next hop to get to a hop 3 :(e, g, forward)hop 4 :(g, h, drop) <= reason: h is only connected to g, packet is not forwarded to incoming link",
+        "provided_answer": "hop 1c, a, forward)  (d, a, forward)  (b, a, forward)  (e, b, forward)  (g, e, forward)\n           (h,g,forward)   (f,c,forward)\n           (c, b, drop) c is not located on the unicast path from b to a\n           (c, d, drop) c is not located on the unicast path from d to a\n           (c, e, drop) c is not located on the unicast path from e to a\n           (d, f, drop) d is not located on the unicast path from f to a\n           (f, g, drop) f is not located on the unicast path from g to a\nhop 2e, a, forward) (f, a, forward)\nhop 3g, a, forward)     \nhop 4h, a, forward)",
+        "answer_feedback": "the response is incorrect. please check the model solution.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "4e43cae391a34957b294e8eb49efffb6",
+        "question": "consider the following topology from the exercise. this time, node a wants to distribute a packet using reverse path broadcast (rpb). assume that every is knows the best path to a and also whether they are the next hop of their neighbors on the unicast path to a.please list all the packets which are sent together with the information whether they will be forwarded or dropped at the receiving nodes. use the following notation: (sender, receiver, drop) for dropped and (sender, receiver, forward) for forwarded packets. please group these tuples according to the number of hops the packets have travelled so far. for dropped packets, please specify the reason why the packet has been dropped in a few words.example for the notation:hop 1:(c, a, forward)(c, b, drop) <= describe reason herehop 2:(a, d, drop) <= describe reason here",
+        "reference_answer": "hop 1 :(a, b, forward),(a, c, forward), (a, d, drop) <= reason: remaining neighbors c and f do not use d as the next hop to get to a hop 2 :(b, e, forward),(c, f, drop), <= reason: remaining neighbors d, e, g do not use f as the next hop to get to a hop 3 :(e, g, forward)hop 4 :(g, h, drop) <= reason: h is only connected to g, packet is not forwarded to incoming link",
+        "provided_answer": "hop 1:(h,g,forward)\nhop 2:\n(g,e,forward)\n(g,f,drop)<=not the shortest path\nhop 3:\n(e,c,forward)\n(e,b,drop)<=it is not located on the unicast path from e to a\n(e,f,drop)<=it is not located on the unicast path from e to a\nhop 4:\n(c,a,forward)\n(c,b,drop)<=it is not located on the unicast path from c to a\n(c,d,drop)<=it is not located on the unicast path from c to a",
+        "answer_feedback": "the routing starts from the a  as sender and this will result in change in the packets forwarded or dropped.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "58f7124062464b41b7e8aad40231fc65",
+        "question": "consider the following topology from the exercise. this time, node a wants to distribute a packet using reverse path broadcast (rpb). assume that every is knows the best path to a and also whether they are the next hop of their neighbors on the unicast path to a.please list all the packets which are sent together with the information whether they will be forwarded or dropped at the receiving nodes. use the following notation: (sender, receiver, drop) for dropped and (sender, receiver, forward) for forwarded packets. please group these tuples according to the number of hops the packets have travelled so far. for dropped packets, please specify the reason why the packet has been dropped in a few words.example for the notation:hop 1:(c, a, forward)(c, b, drop) <= describe reason herehop 2:(a, d, drop) <= describe reason here",
+        "reference_answer": "hop 1 :(a, b, forward),(a, c, forward), (a, d, drop) <= reason: remaining neighbors c and f do not use d as the next hop to get to a hop 2 :(b, e, forward),(c, f, drop), <= reason: remaining neighbors d, e, g do not use f as the next hop to get to a hop 3 :(e, g, forward)hop 4 :(g, h, drop) <= reason: h is only connected to g, packet is not forwarded to incoming link",
+        "provided_answer": "hop 1:\n(h,g, forward)\nhop 2:\n(g,f, forward), (g,e, forward)\nhop 3:\n(e,b, forward), (e,c, forward), (e,f, drop)<=  because of duplicate\n(f,c, drop)<= because of duplicate, (f,d, forward)\nhop 4:\n(b,c, drop)<= becuase of duplicate, (b,a, forward), (c,a drop)<= becuase of duplicate, (d,a, drop)<= becuase of duplicate",
+        "answer_feedback": "the flow starts from a  as sender not h. packets are dropped for being not on the best route, not for being duplicate as the sole reason.",
+        "verification_feedback": "incorrect",
+        "max_score": 2.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "69fefc2e66f7433eb998b5f7ce4235e6",
+        "question": "discuss 3 methods (each with at least one advantage and disadvantage) that address the problem of duplicate packets on the transport layer in a connection-oriented service.",
+        "reference_answer": "1. to use temporarily valid tsaps -method: -tsap valid for one connection only -generate always new tsaps -evaluation -in general not always applicable:-process server addressing method not possible, because -server is reached via　a designated/known tsap - some tsaps always exist as \"well-known\" 2. to identify connections individually -method: -each individual connection is assigned a new seqno and -endsystems remember already assigned seqno -evaluation -endsystems must be capable of storing this information -prerequisite: -connection oriented system (what if connection-less?) -endsystems, however, will be switched off and it is necessary that the information is reliably available whenever needed 3. to identify pdus individually: individual sequential numbers for each pdu -method: -seqno basically never gets reset -e.g. 48 bit at 1000 msg/sec: reiteration after 8000 years -evaluation -higher usage of bandwidth and memory -sensible choice of the sequential number range depends on -the packet rate -a packet's probable \"lifetime\" within the network",
+        "provided_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
+        "answer_feedback": "the response is incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "be66b172b694459e932e044c7dc6ec10",
+        "question": "name the 3 service classes the data link layer offers and explain the differences between the classes.",
+        "reference_answer": "1.unconfirmed connectionless - no ack, loss of data possible, no flow control, no connect or disconnect.\n2.confirmed connectionless - with ack, no loss of data (timeout and retransmit instead→ duplicates and sequence errors possible), no flow control, no connect or disconnect.\n3.connection-oriented - no data loss, duplication or sequencing errors. instead a 3 phased communication with connect and disconnect, and flow control",
+        "provided_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
+        "answer_feedback": "the response does not identify the services correctly and also the differences between them. the response enumerates the difference between layer 1 and 2 services, but the question asks for the differences between the types of services in layer 2 only.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "0d53259dedea495b949470052dafe509",
+        "question": "name the 3 service classes the data link layer offers and explain the differences between the classes.",
+        "reference_answer": "1.unconfirmed connectionless - no ack, loss of data possible, no flow control, no connect or disconnect.\n2.confirmed connectionless - with ack, no loss of data (timeout and retransmit instead→ duplicates and sequence errors possible), no flow control, no connect or disconnect.\n3.connection-oriented - no data loss, duplication or sequencing errors. instead a 3 phased communication with connect and disconnect, and flow control",
+        "provided_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
+        "answer_feedback": "the response answers no parts of the question correctly and is not related to the question.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b105e8e305af4613b04c0d4480590f9e",
+        "question": "name the 3 service classes the data link layer offers and explain the differences between the classes.",
+        "reference_answer": "1.unconfirmed connectionless - no ack, loss of data possible, no flow control, no connect or disconnect.\n2.confirmed connectionless - with ack, no loss of data (timeout and retransmit instead→ duplicates and sequence errors possible), no flow control, no connect or disconnect.\n3.connection-oriented - no data loss, duplication or sequencing errors. instead a 3 phased communication with connect and disconnect, and flow control",
+        "provided_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
+        "answer_feedback": "the response answers no parts of the question correctly. the correct class names are unconfirmed connection-less, confirmed connection-less and connection oriented.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "25d7cda6e9d4467894907305b65c2f6c",
+        "question": "please explain the problem with \"distributed queue dual buses\" that was discussed in the lecture in 1-3 sentences.",
+        "reference_answer": "depending on your position in the bus station have a disadvantage/advantage when reserving transmission rights.",
+        "provided_answer": "it works with high-power in order to work very performant with a high amount of data.\nproblem is that it is not that good, when there is less data.",
+        "answer_feedback": "the response is incorrect. there is a fairness issue with the distribution of transmission rights between stations that depends on the distance between a station and the frame generator or the slave frame generator.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "6268b73762c146b5a5b62b2a61217e43",
+        "question": "please explain the problem with \"distributed queue dual buses\" that was discussed in the lecture in 1-3 sentences.",
+        "reference_answer": "depending on your position in the bus station have a disadvantage/advantage when reserving transmission rights.",
+        "provided_answer": "there is a fairness problem with dqdbs, where all nodes are allowed to transmit at a certain rate, but when a node is given an offered rate less than the allowed limit, that node transmits at the lower rate while others continue at the maximum allowed rate. this is called rate controlled fairness.",
+        "answer_feedback": "the response is incorrect because it identifies the problem of \"fairness\" in the wrong context. \"rate controlled fairness\" is a way to overcome the problem of fairness, when stations at different positions are forced to have the same rate irrespective of their position in the bus, not a problem itself.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "6defa69e6aef472e9a0ac03a9aa8d10c",
+        "question": "please explain the problem with \"distributed queue dual buses\" that was discussed in the lecture in 1-3 sentences.",
+        "reference_answer": "depending on your position in the bus station have a disadvantage/advantage when reserving transmission rights.",
+        "provided_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
+        "answer_feedback": "the response identifies the fairness problem in dqdb. however, it states that it is not dependent on the location and that is incorrect. the fairness problem of reserving transmission rights depends on the distance between a station and the frame generator or the slave frame generator.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "f53838e0eee440cc95c7e67b87b8fc71",
+        "question": "state at least 4 of the differences shown in the lecture between the udp and tcp headers.",
+        "reference_answer": "possible differences :\nthe upd header (8 bytes) is much shorter than the tcp header (20-60 bytes)\nthe udp header has a fixed length while the tcp header has a variable length\nfields contained in the tcp header and not the udp header :\n-sequence number\n-acknowledgment number\n-reserved\n-flags/control bits\n-advertised window\n-urgent pointer\n-options + padding if the options are\nudp includes the packet length (data + header) while tcp has the header length/data offset (just header) field instead\nthe sender port field is optional in udp, while the source port in tcp is necessary to establish the connection",
+        "provided_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
+        "answer_feedback": "the response states differences between tcp and udp while the question requirement is to identify differences between udp and tcp headers.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "121b06fb3c0f4cafaef655b8d7f699e5",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "provided_answer": "through the whole lesson we have learned that some issues can surge if two users or more send information at the same time.with these independent intervals the system cannot assure that there won't be collisions, overflow or congestion which might affect the correct arrival of the packets (there is a risk that the information won't be correctly sent) . but with the condition given on the lecture that this interval delta t is infinitely  small all of this problems will be avoided and there would not be any problem in the real internet traffic.",
+        "answer_feedback": "the assumption does not hold for the internet. so the stated response is incorrect as it relates to the situation when multiple users send at the same time while the question asked if a packet arrival at a node is dependent on the previous arrivals.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "67a2aac5f5714ef08f0bc05b7647dfd8",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "provided_answer": "the poisson process is based on probabilities based on randomly arriving packets, based on t indepedent.\nevery interval is independent to the previous intervals, so arrivals are memoryless.\nthe same situation is for the internet. here we have server/client application, webserver, streaming clients which have different and randomly packet arrivals which can be modelled as poisson process.",
+        "answer_feedback": "the correct answer is \"no\". the packets in streaming are not random but depend on the previous arrivals at a node.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "9f45dcf50258491fbde7fdd47eeb68cf",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "provided_answer": "the assumption of independent poisson arrivals has been justified by claiming that the aggregation of many independent and identically distributed renewal processes tend to poisson process when the number increases.\n\npoisson processes are conventional in traffic application scenarios that include a large number of independent traffic streams. the theoretical background behind the usage comes from palm's theorem (arrowsmith et al. 2015). it states that under suitable but mild conditions, such a large number of multiplexed streams approach a poisson process as the number of streams grows. still, the individual rates decrease to keep the aggregate rate constant. but, traffic aggregation need not always result in a poisson process. so it holds if the above-mentioned criteria apply.",
+        "answer_feedback": "the response does not provide an explicit \"yes\" or \"no\". it instead states another underlying condition when the poisson process will hold, without concluding whether it holds for the real internet.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "9c3b2c1f5bc84f1fb6fe5c72b3ce01d4",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "provided_answer": "an important characteristic of the poisson distribution is that the probability of x taking a discrete value is independent upon the previous values i.e. the probability is independent of the past. poisson distribution is often used to model arrival of packets during an interval. the packet arrival times modeled by the poisson distribution have an exponential distribution and constitute an independent identically distributed process. however, in practice it has been shown that the packet inter-arrival times do not have an exponential distribution, hence the error introduced by modeling them as poisson distribution is significantly large.",
+        "answer_feedback": "the question asks whether it is true that the arrivals at a node depend on previous arrivals at the same node for real internet traffic. however, the response states an explanation of the error introduced while modelling the packet arrival using poisson distribution due to non-exponential distributions.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "12d02f39822b4e6b999333dbe42f20b1",
+        "question": "transparent bridges manage a bridge table for the forwarding process. please describe what information the table holds and how it is modified during the backwards learning phase. how is the table used in the forwarding process and what is one benefit of that? please answer the question in 2-5 sentences. ",
+        "reference_answer": "1.a mapping between destinations/stations (macs) and outgoing lan interfaces.\n2.this table is initially empty and received packages are flooded on every line. when a bridge receives a frame (as the bridge runs in promiscuous mode it listens in on all the traffic arriving at its lan links) with source address q on lan l, it adds the timestamped entry “q can be reached over l” to the table and the next time a packet with destination q arrives, it is forwarded on link l. the time-stamp is used to update or purge old entries. therefore, it learns by observing the incoming traffic.\n3.to do selective forwarding instead of flooding. \n4.i)less duplication/unnecessary flooding is prevented.\nii)less congestion.\niii)better bandwidth usage than flooding.",
+        "provided_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
+        "answer_feedback": "the bridge table does not contain component information. the response does not mention how the information \"a can be reached over lan l\" is used in backward learning and selective forwarding. the stated benefit is also incorrect.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b4c9cdc3b0ec4de3ad64cade136e5268",
+        "question": "transparent bridges manage a bridge table for the forwarding process. please describe what information the table holds and how it is modified during the backwards learning phase. how is the table used in the forwarding process and what is one benefit of that? please answer the question in 2-5 sentences. ",
+        "reference_answer": "1.a mapping between destinations/stations (macs) and outgoing lan interfaces.\n2.this table is initially empty and received packages are flooded on every line. when a bridge receives a frame (as the bridge runs in promiscuous mode it listens in on all the traffic arriving at its lan links) with source address q on lan l, it adds the timestamped entry “q can be reached over l” to the table and the next time a packet with destination q arrives, it is forwarded on link l. the time-stamp is used to update or purge old entries. therefore, it learns by observing the incoming traffic.\n3.to do selective forwarding instead of flooding. \n4.i)less duplication/unnecessary flooding is prevented.\nii)less congestion.\niii)better bandwidth usage than flooding.",
+        "provided_answer": "the bridge table holds all the mac addresses on the lan as well as all the physical bridge ports connected to where the address is located on the network. in the backwards learning phase, the table is updated every time a packet from a source is sent through the bridge, the source lan and bridge are recorded to help forward future packets. the table is also updated periodically and old entries are purged. when packets are sent through the bridge in the future, they refer to the bridge table and since they are implemented as spanning trees, it ensures no loops are formed in the forwarding process and that there exists only one path connecting 2 lans.",
+        "answer_feedback": "the response has the following errors: a)not all the mac addresses are stored, only the incoming packets' source addresses. b)during backward learning, the station, lan, and the timestamp is recorded, not the bridge. c)how the information learned is used in selective forwarding is not mentioned. d) the stated benefit is incorrect as it points to the benefit of using a spanning tree in the case of multiple transparent bridges. however, the question asked for the benefit derived from using the bridging table.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b7d356c4307d431c8184f9ff771208d5",
+        "question": "what is the purpose of reverse path forwarding and reverse path broadcast? how do they work?",
+        "reference_answer": "purpose: both implement a more efficient kind (in terms of duplicate packets) of broadcasting than flooding / to minimize the number of duplicate packets in the network when broadcasting.\n\nreverse path forwarding:  each node has a routing table stemming from unicast routing algorithms. when receiving a packet of sender s from neighbor n at node x, check the routing table and only forward the packet to all adjacent nodes (except for n) when you would send packets to s over n → the assumption is that the packet used the best route until now.\nreverse path broadcast: nodes monitor unicast traffic to learn which paths in the network they are a part of, that is node x knows that is on the best path between two nodes a and b if it receives unicast packets coming from a and going to b or visa versa. in other words, each node knows which spanning trees it is part of in the network. reverse path broadcasting works identical to reverse path forwarding with the exception that it only forwards packets on edges that are part of a spanning tree (again excluding the incoming line to n).",
+        "provided_answer": "1. purpose:  help prevent ip address spoofing. 2. rpf a sender broadcasts to all the stations. when a packet reaches a is ,the is will check the path. if it is the usually path. it will send to others",
+        "answer_feedback": "the stated purpose is correct but not the main purpose which is to reduce duplicates when broadcasting. the explanation of rpf is incomplete, as it is not clear what is meant by the usual path or how the packet is forwarded.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "33ace70d9bf447829edaad44013440d5",
+        "question": "what is the purpose of reverse path forwarding and reverse path broadcast? how do they work?",
+        "reference_answer": "purpose: both implement a more efficient kind (in terms of duplicate packets) of broadcasting than flooding / to minimize the number of duplicate packets in the network when broadcasting.\n\nreverse path forwarding:  each node has a routing table stemming from unicast routing algorithms. when receiving a packet of sender s from neighbor n at node x, check the routing table and only forward the packet to all adjacent nodes (except for n) when you would send packets to s over n → the assumption is that the packet used the best route until now.\nreverse path broadcast: nodes monitor unicast traffic to learn which paths in the network they are a part of, that is node x knows that is on the best path between two nodes a and b if it receives unicast packets coming from a and going to b or visa versa. in other words, each node knows which spanning trees it is part of in the network. reverse path broadcasting works identical to reverse path forwarding with the exception that it only forwards packets on edges that are part of a spanning tree (again excluding the incoming line to n).",
+        "provided_answer": "each sender has its own spanning tree but is do not need to know the spanning trees each router has information which path it would use for (unicast)-packets because of the unicast routing algorithms",
+        "answer_feedback": "the response is incomplete as it does not mention where the provided incomplete information is used in, rpf or rpb. the purpose of using them is also not mentioned.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "2f1f7bff36a74ef88c95203d6d53b0ad",
+        "question": "what is the purpose of reverse path forwarding and reverse path broadcast? how do they work?",
+        "reference_answer": "purpose: both implement a more efficient kind (in terms of duplicate packets) of broadcasting than flooding / to minimize the number of duplicate packets in the network when broadcasting.\n\nreverse path forwarding:  each node has a routing table stemming from unicast routing algorithms. when receiving a packet of sender s from neighbor n at node x, check the routing table and only forward the packet to all adjacent nodes (except for n) when you would send packets to s over n → the assumption is that the packet used the best route until now.\nreverse path broadcast: nodes monitor unicast traffic to learn which paths in the network they are a part of, that is node x knows that is on the best path between two nodes a and b if it receives unicast packets coming from a and going to b or visa versa. in other words, each node knows which spanning trees it is part of in the network. reverse path broadcasting works identical to reverse path forwarding with the exception that it only forwards packets on edges that are part of a spanning tree (again excluding the incoming line to n).",
+        "provided_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
+        "answer_feedback": "both algorithms are indeed used to broadcast packets in the network but the main purpose is to minimize the number of duplicate packets during broadcasting. also, it's unclear which algorithm the stated description is explaining.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "aae2e5d859ec44cc8c43c30374c5c05b",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "provided_answer": "a useful property for broad-/multicasting of the spanning tree for a certain node is that it does not only specify the optimal path from the other nodes to this node, but also the optimal paths from this node to the other nodes. link state routing can be used to construct multicast spanning trees by first running the link state routing procedure to get the spanning tree for a certain node x. this spanning tree could already be used as the multicast spanning tree for node x, but it can be optimized by removing all edges that are not part of any path between any two nodes of the multicast group.",
+        "answer_feedback": "what makes spanning trees desirable for multicast and broadcast is the absence of loops and, thus, minimizing unnecessary duplicates.  the response is missing how the multicast group information is distributed to all nodes. the link-state packets have to be expanded with multicast group information so other nodes can construct multicast trees by themselves.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "2f899b7d917d4340aa0639b800357079",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "provided_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
+        "answer_feedback": "although all nodes are connected with at least one link, that is also the case in the original network. more importantly, they need to have only one unique path so that the number of duplicate messages can be minimized. the description of modification related to the link state algorithm to construct a  multicast spanning tree is not correct because it just partially describes the classic link-state algorithm without any modification to include multicast group information.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "92fc2caa63da4052a123202b5c15887c",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "provided_answer": "the fact that you only need to send out the data as one packet and dont have to send a single packet for each receiver, you also dont need to know all the receivers as the tree will handle the transmission.",
+        "answer_feedback": "the response's reasoning will not hold when we have a sender with 5 nodes directly connected to it. in such a case, 5 copies will be made at the sender and individually sent to each node. the explanation for the link-state modification is missing.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "788f8ceae78c43e0b41578770f996b93",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "provided_answer": "the property is that all is know the multicast tree. to construct a spanning tree for multicasting, you also have to add the information of the other is of the multicast group.",
+        "answer_feedback": "initially, only each is is aware of which group it belongs to and still needs to discover other group members. to construct a multicast spanning tree, we need to add the information to which group each is belongs. the response does not state how this information is added, propagated, and used to construct the multicast spanning tree.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3fe8cee60f1e443dbe3e9bb282b2bd13",
+        "question": "what happens to the \"collision domain diameter\" if you use csma / cd and increase the speed of a network by a factor of 10, eg from 10mb / s to 100mb / s (all else being equal)?",
+        "reference_answer": "diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "provided_answer": "since the smallest package is at least 64 bytes, the maximum collision domain diameter is calculated by the time it takes for the smallest package to travel at a certain speed. thus, at 10 mb/s = 1x10^7 bytes/s, 64/1x10^7 = 6.4x10^-6 s while on 100mb/s, 64/100x10^7 = 6.4 x 10^-8 s. thus the collision domain diameter is increased 100 times.",
+        "answer_feedback": "the answer is incorrect as it states that the collision domain diameter increases 100 times, but for collisions to be detected, the diameter decreases by a factor of 10. for example, from 1000m to 100m.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "31ae657f04a4442eb86212d2806f8d99",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the acknowledgment added to the next frame has to refer to the received frame so that it can be assigned to the related data. otherwise you cannot identify which frame is confirmed by your acknowledgment.",
+        "answer_feedback": "the response does not identify the duplex connection as the requirement. acknowledgments, whether sent independently or piggybacked, specify which frame is acknowledged, so it is not a  specific requirement for piggybacking.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "c5f8a0fb9a884ebb8c2e2eee97408b55",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "- the requirement for the piggybacking extension includes the acknowledgment \"ack\".\n- it contains the sequence-number ack(seq.no) and confirms the frame(seq.no). \n- here, the acknowledgment ack can be given by the frames implicitly.",
+        "answer_feedback": "the response answers the requirement incorrectly. the response states what happens in piggybacking/flow control in general, but a duplex channel is required for it to work.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "e09af8a0f43949698d0a0cf07d926216",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "1.an interlocal agreement between agencies must be signed and filed with the county auditor or posted online.\n2.the original contracting agency has complied with all requirements and posts the solicitation online.\n3.the vendor agrees to the arrangement through the initial solicitation.",
+        "answer_feedback": "the response does not answer the underlying requirement for piggybacking as it is out of topic and context.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "d0fc4be04ade4a86bd61e9df3ac788e1",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "frames may contain implicit acks",
+        "answer_feedback": "the response does not identify the underlying requirement of duplex operation. implicit acknowledgment is a result of piggybacking rather than a prerequisite.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "bc5cfc19fffb4340a9c891d8abcdd157",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "- the initial seqno. is 0\n- the next seqno. and the next ack-seqno to be expected is given",
+        "answer_feedback": "the response does not identify the underlying requirement for piggybacking. the\"initial seqno. is 0\" is incorrect and the next seqno. and the next ack-seqno alone cannot be considered as a requirement but more of an implementation detail.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "eb00f994e0db42a1bebbc66c8bd83020",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the requirements are listed below\n1. an interlocal agreement between agencies must be signed and filed with the county auditor or posted online;\n2. the original contracting agency has complied with all requirements and posts the solicitation online; and\n3. the vendor agrees to the arrangement through the initial solicitation.",
+        "answer_feedback": "the response answers no parts of the question correctly and it is not related to the topic.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "877b1844231c4017b18ddf55da4a56ed",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the answer frames have to be able to contain data + ack and not only ack or only data. this way the ack can be delayed and sent along with data in one frame.",
+        "answer_feedback": "the response does not answer the underlying requirement for piggybacking. the above point is related to how piggybacking's implementation works and not what is required for piggybacking to work.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3296721a75c84f90852c5ba362e5b70f",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "something needs to be sent in one direction, to be able to send some data back with the ack. it is basically using the default operation of sending the ack to also send some additional data back to the sender, instead of sending a new frame.",
+        "answer_feedback": "the response is incorrect because it implies that the presence of data on both sides is necessary for acknowledgments to be sendable. however, one can also send pure acknowledgments when no data is available for a specific time.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "70c561447c634e909b013bb418b3283f",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the initial sequence number is 0 and the next sequence number and the next ack-sequence number to be expected is given",
+        "answer_feedback": "the response does not identify the underlying requirement of duplex operation. the stated points are not always true and depend on the implementation.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "a7bb084147214759a278c35de6fbbad9",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "if you use piggbacking on the sliding window protocol, \nthe receiver waits for a given time period to attach the sequence number\nand the next ack-sequence number to the next frame.\n\nin order to do that, additional time delay has to be considered and the \nsender has to be informed about the fact, that there are probably no \nstandalone ack frames transmitted. also, the sender has to attach the \nack to the data himself.",
+        "answer_feedback": "the response does not identify the underlying requirement for piggybacking. the above points are related to the implementation of piggybacking.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "e9c5fd69a7e84073b6eda762943ccce9",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "- need a counter \n- because if receiver have no frame to send, the sender will never get an ack for his sended frames\n- so when a frame is received, the receiver have no frame to send and the count is ended, the receiver send a ack",
+        "answer_feedback": "the response does not answer the underlying requirement for piggybacking. the stated-point is more of an optimizing technique rather than a requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "66b60d3db5df488f9e5104d94313c563",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the data link layer of one station must get a new packet from the upper layer by the end of the timeout interval",
+        "answer_feedback": "the response is incorrect because even if it fails to get a packet from the upper layer, it can send the acknowledgment independently without piggybacking.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "84b3d84d1ec342b1a5955906f4e8b193",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "frames can contain implicit acks",
+        "answer_feedback": "the response is incorrect. in piggybacking, the acknowledgment may be implicit but that is not the requirement. the requirement is to have a separate field in the data frame for acknowledgment.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "bcf7b3da017b4252b118858feebb3d39",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "with a window size of 1, the sequence must always be correct.\nif the window size is greater than 1, there are no requirements, but the size is limited by the window size.",
+        "answer_feedback": "the response does not answer the underlying requirement for piggybacking. the above points are true for the sliding window protocol in general and are not specific to piggybacking.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "cd7be238de764b20ac2a9df39a516711",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "-acks or naks and data are not sent separately. ack or nak is attached to the next data frame and then sent with data together to the other side.\n\n-the data link layer of one station must get a new packet from the upper layer by the end of the timeout interval. then the ack or nak is piggybacked on the data frame and sent together. otherwise, the data link layer sends only ack or nak frame.",
+        "answer_feedback": "the response answers no parts of the question correctly. the response contains only the description of what happens in piggybacking.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "7d355376580c4f649a45f1a944fab47e",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "provided_answer": "the frames may contain implicit acks.",
+        "answer_feedback": "the response does not answer the requirement correctly. implicit acks is the description of piggybacking rather than a requirement.",
+        "verification_feedback": "incorrect",
+        "max_score": 1.0,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "97fd01c2bac6422d98b7b612cfe54819",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "1.0.0.0 up to 127.255.255.255",
+        "answer_feedback": "not all addresses in class a are reserved",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b53cb027da284deaab672d36ae806dd9",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "1.0.0.0-126.255.255.255",
+        "answer_feedback": "not every address in class a is reserved",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "378c5ddf33df4bfaaf0221506cd60e4b",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0 (network number)\n127.255.255.255 (broadcast)",
+        "answer_feedback": "missing loopback. and 126.255.255.255 or 98.255.255.255 is broadcast, too, not only 127.255.255.255",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "2ab677e86bb3407f9fb39c4a6560b067",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0, 127.255.255.255",
+        "answer_feedback": "the addresses have a range: 127.0.0.0 - 127.255.255.255\nmissing loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "3bae80bf276d4c8ca0ab6d11ec007adb",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0 , 127.255.255.255",
+        "answer_feedback": "the addresses have ranges: from x.0.0.0 and x.255.255.255 with x between 0 and 127\nmissing: loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b34df5fa479440d3b521f58e59c587dc",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "1.0.0.0 to 127.255.255.255",
+        "answer_feedback": "not all addresses in class a are reserved",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "1bb7ba81bb67425f80e1be7ca66c6ad5",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "10.255.255.255\n10.0.0.0",
+        "answer_feedback": "missing: loopback and ranges",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "27fef8d3e8304dd9a11f0d903fcfbde2",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "from 0.0.0.0  to 127.0.0.0 are all addresses in class a. except 0 and 127 are reserved for network and broadcast",
+        "answer_feedback": "network is x.0.0.0 and broadcast is x.255.255.255, with x between 0 and 127\nmissing: loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "c9a9c0746da743a08482e78187c9247d",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "network ip adress\nbroadcast adress",
+        "answer_feedback": "what are the addresses?\nmissing: loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "7945d2414d5f4001a4c87c7e8e61d2f5",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "2,147,483,648",
+        "answer_feedback": "what do you mean?",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "48779592f1ae49809b7411d3a4be4016",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0\n127.255.255.255\nfirst and last address are reserved.",
+        "answer_feedback": "the addresses have a range: 127.0.0.0 - 127.255.255.255\nmissing loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b5e6b8004c4f40b7bc9877d05999ba6a",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0\n10.0.0.0",
+        "answer_feedback": "missing loopback and ranges",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "ac78155dd6a64d07b3af2cdbed28244e",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0\n\n127.255.255.255",
+        "answer_feedback": "the addresses have a range: 127.0.0.0 - 127.255.255.255\nmissing: loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "b336afd7de5e408580a62ca7379b4a33",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "1.0.0.0-126.255.255.255",
+        "answer_feedback": "please watch your notation: 1.0.0.0 - 126.255.255.255 does not mean, only addresses with .0.0.0 or .255.255.255, but every address in this range, for example 13.8.205.4, too",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "c2eaccd888184505888d5a9b8b637467",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0000 0000",
+        "answer_feedback": "what do you mean by this?",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "8ff2b7a06d1846dfa671946732a1075d",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0\n255.255.255.255",
+        "answer_feedback": "255.255.255.255 not in class a. -loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "43fd17df3d004a76a9cd3feda2c1c57f",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "class a:\n0.0.0.0. - 127.255.255.255",
+        "answer_feedback": "not all addresses are reserved",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    },
+    {
+        "id": "530c7f67349b4616bba4c17e8a9a03b4",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "provided_answer": "0.0.0.0. und 127.255.255.255",
+        "answer_feedback": "the addresses have ranges: from x.0.0.0 and x.255.255.255 with x between 0 and 127\nmissing: loopback",
+        "verification_feedback": "incorrect",
+        "max_score": 0.5,
+        "normalized_score": 0.0
+    }
+]

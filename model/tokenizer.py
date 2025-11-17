@@ -4,56 +4,54 @@ from transformers import BertTokenizerFast
 
 _default_tokenizer = 'bert-base-uncased'
 
-def _clean_data(data: str) -> str:
-    data = sub(r"\s+", " ", data.strip())
-    return data
+def _clean_data(text: str) -> str:
+    return sub(r"\s+", " ", text.strip())
 
-def _preprocess(data: Dataset) -> Dataset:
-    question = _clean_data(data["question"])
-    reference = _clean_data(data["reference_answer"])
-    student = _clean_data(data["provided_answer"])
+def _preprocess(example: dict) -> dict:
+    reference = _clean_data(example["reference_answer"])
+    student = _clean_data(example["provided_answer"])
+    example["input_text"] = f"Reference: {reference} Student: {student}"
+    return example
 
-    data["input_text"] = f"Question: {question} Reference: {reference} Student: {student}"
-    return data
+def _load_datasets(data_files: set) -> Dataset:
+    return load_dataset('json', data_files=data_files)
 
-def _load_datasets(datafiles: set)->Dataset:
-    data = load_dataset(
-        'json',
-        data_files=datafiles
-    )
-    return data
-
-def tokenize(data_files:set, tokenizer_path:str = _default_tokenizer, is_training: bool = True) -> dict:
+def tokenize(data_files: set, tokenizer_path: str = _default_tokenizer, is_training: bool = True) -> dict:
     tokenizer = BertTokenizerFast.from_pretrained(tokenizer_path)
-    data = _load_datasets(datafiles=data_files)
+    data = _load_datasets(data_files)
+    
+    # Preprocess to add input_text
     data = data.map(_preprocess)
-    feature_columns_to_be_removed = ["question",
-                                    "reference_answer",
-                                    "provided_answer",
-                                    "input_text",
-                                    "answer_feedback",
-                                    "verification_feedback", 
-                                    "id",
-                                    "score"
-                                    ]
-
-    def create_tokens(data:dict) -> dict:
-        encoding = tokenizer(
-            data["input_text"],
+    
+    # Columns to remove after tokenization
+    columns_to_remove = [
+        "question",
+        "reference_answer",
+        "provided_answer",
+        "answer_feedback",
+        "verification_feedback",
+        "normalized_score",
+        "max_score"
+    ]
+    
+    # Tokenization function
+    def create_tokens(batch: dict) -> dict:
+        encodings = tokenizer(
+            batch["input_text"],
             padding="max_length",
             truncation=True,
-            max_length=512 # The maximum number of tokens allowed by BERT
+            max_length=512
         )
-        if is_training and "score" in data:
-            encoding["labels"] = data["score"]
+        if is_training and "verification_feedback" in batch:
+            # Map "correct"/"incorrect" to 1/0
+            encodings["labels"] = [1 if v == "correct" else 0 for v in batch["verification_feedback"]]
+        return encodings
 
-        return encoding
-    
     data = data.map(create_tokens, batched=True, batch_size=8)
-    data = data.remove_columns(feature_columns_to_be_removed)
-    data.set_format("torch")
-
+    data = data.remove_columns(columns_to_remove)
+    data.set_format(type="torch")
+    
     if tokenizer_path == _default_tokenizer:
-        tokenizer.save_pretrained("./model/bert_tokenizer")
+        tokenizer.save_pretrained("./model/bert_tokenizer(0)")
+    
     return data
-
