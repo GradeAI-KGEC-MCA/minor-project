@@ -9,11 +9,11 @@ folders = {
 file_names = [
     'train',
     'validation',
-    'unseen_questions',
+    # 'unseen_questions',
     'unseen_answers'
 ]
 
-original_path = 'data/original/'
+original_path = './data/original/'
 
 def quicksort(data, low=0, high=None):
     if high is None:
@@ -97,17 +97,25 @@ def count_data(data):
     
     return count
 
-def get_questions(data):
-    questions = {}
+def count_original_data(data, key):
+    st = set()
     for record in data:
-        if record['question'] not in questions:
-            questions[record['question']] = {
-                'question': record['question'],
-                'reference_answer': record['reference_answer'],
-                'max_score': record['max_score']
-                }
+        if record['verification_feedback'].lower() == 'incorrect':
+            st.add(record[key])
     
-    return list(questions.values())
+    return len(st)
+
+def get_q_id(question):
+    for q in questions:
+        if question.lower() == questions[q]['question']:
+            return q
+
+def get_questions(data):
+    q_set = set()
+    for record in data:
+        q_set.add(record['question'])
+    
+    return q_set
 
 def remove_id(data):
     for record in data:
@@ -138,6 +146,9 @@ def format_data(data: list[dict]) -> list[dict]:
             'normalized_score': record['normalized_score']
         })
 
+    for _ in range(12):
+        random.shuffle(formatted)
+
     print(f'count: {count_data(formatted)}')
     return lower_case_data(formatted)
 
@@ -148,18 +159,27 @@ def lower_case_data(data):
                 record[key] = value.lower()
     return data
 
+def generate_id(data):
+    for i, record in enumerate(data):
+        record['id'] = f'smp{i:04d}{get_q_id(record['question'])}'
+    
+    return data
+
+questions = get_json('data/metadata/questions.json')
 print(__name__, '\n\n')
 if __name__ == '__main__':
 
-    for file in file_names:
-        data = get_json(original_path+file+'.json')
-        data = quicksort(data)
-        data = add_max_scores(data)
-        data = normalize_score(data)
-        data = format_data(data)
-        # data = remove_id(data)
-        data = separate_correct_incorrect(data)
 
-        save_json(data['correct'], folders['correct']+file+'.json')
-        save_json(data['incorrect'], folders['incorrect']+file+'.json')
-        save_json(data['partially_correct'], folders['partially_correct']+file+'.json')
+    data = get_json('./data/updated/formatted/'+'train'+'.json')
+
+    for record in data:
+        print(record['id'][7:])
+        count = questions[record['id'][7:]]['count']
+        if record['verification_feedback'].lower() == 'correct':
+            count['correct'] += 1
+        elif record['verification_feedback'].lower() == 'incorrect':
+            count['incorrect'] += 1
+        elif record['verification_feedback'].lower() == 'partially correct':
+            count['partially correct'] += 1
+
+    save_json(questions, './data/metadata/questions.json')

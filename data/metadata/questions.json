@@ -1,0 +1,288 @@
+{
+    "q001": {
+        "id": "Q001",
+        "question": "a company is planning to set up a new lan at one of their locations and is looking for an appropriate medium access procedure. however, the funding is tight so they expect the channel load to be high compared to the hardware they can provide. currently, they would like to have 20 systems sharing the channel, but it should be expandable later on. which of the mac procedures introduced in the lecture (polling, tdma with or without reservation, token ring, pure or slotted aloha, 1-persistent csma, p-persistent csma, non-persistent csma or csma/cd) would you recommend?give 2 reasons for your decision and 1 potential weakness of your recommendation in 2-6 sentences.",
+        "reference_answer": "0.5 p for a sensible choice out of: token ring, p-persistent or non-persistent csma, csma/cd or tdma with reservation 1p for the drawback and 1p for an advantage.the following properties may be considered: scalability, waiting time, extendability, cost effectiveness, constraints, hardware requirements, compatibility, throughput, overhead, complexity and prioritization capabilities",
+        "max_score": 3.5,
+        "count": {
+            "incorrect": 0,
+            "correct": 57,
+            "partially correct": 33
+        }
+    },
+    "q002": {
+        "id": "Q002",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "max_score": 2.5,
+        "count": {
+            "incorrect": 12,
+            "correct": 94,
+            "partially correct": 5
+        }
+    },
+    "q003": {
+        "id": "Q003",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 11,
+            "correct": 24,
+            "partially correct": 14
+        }
+    },
+    "q004": {
+        "id": "Q004",
+        "question": "consider the following network topology from the lecture:with routing, we want to find the best path for our packets. for this, we first need to define a metric to evaluate the quality of a path. one possible choice could be the current load (i.e. the current utilization in terms of sent packets/bytes) on this path. assume that a wants to send data to g, could this routing strategy cause any problems at the receiver end? please explain your answer in 1-2 sentences.",
+        "reference_answer": "yes, using the current load to find the best path can lead to fluctuations/oscillations when there is more than one path between any pair of end systems in the network (here: cf and ei). this can cause packet reorderings at the receiving side.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 22,
+            "partially correct": 50
+        }
+    },
+    "q005": {
+        "id": "Q005",
+        "question": "consider the following topology from the exercise. this time, node a wants to distribute a packet using reverse path broadcast (rpb). assume that every is knows the best path to a and also whether they are the next hop of their neighbors on the unicast path to a.please list all the packets which are sent together with the information whether they will be forwarded or dropped at the receiving nodes. use the following notation: (sender, receiver, drop) for dropped and (sender, receiver, forward) for forwarded packets. please group these tuples according to the number of hops the packets have travelled so far. for dropped packets, please specify the reason why the packet has been dropped in a few words.example for the notation:hop 1:(c, a, forward)(c, b, drop) <= describe reason herehop 2:(a, d, drop) <= describe reason here",
+        "reference_answer": "hop 1 :(a, b, forward),(a, c, forward), (a, d, drop) <= reason: remaining neighbors c and f do not use d as the next hop to get to a hop 2 :(b, e, forward),(c, f, drop), <= reason: remaining neighbors d, e, g do not use f as the next hop to get to a hop 3 :(e, g, forward)hop 4 :(g, h, drop) <= reason: h is only connected to g, packet is not forwarded to incoming link",
+        "max_score": 2.5,
+        "count": {
+            "incorrect": 3,
+            "correct": 26,
+            "partially correct": 44
+        }
+    },
+    "q006": {
+        "id": "Q006",
+        "question": "discuss 3 methods (each with at least one advantage and disadvantage) that address the problem of duplicate packets on the transport layer in a connection-oriented service.",
+        "reference_answer": "1. to use temporarily valid tsaps -method: -tsap valid for one connection only -generate always new tsaps -evaluation -in general not always applicable:-process server addressing method not possible, because -server is reached via　a designated/known tsap - some tsaps always exist as \"well-known\" 2. to identify connections individually -method: -each individual connection is assigned a new seqno and -endsystems remember already assigned seqno -evaluation -endsystems must be capable of storing this information -prerequisite: -connection oriented system (what if connection-less?) -endsystems, however, will be switched off and it is necessary that the information is reliably available whenever needed 3. to identify pdus individually: individual sequential numbers for each pdu -method: -seqno basically never gets reset -e.g. 48 bit at 1000 msg/sec: reiteration after 8000 years -evaluation -higher usage of bandwidth and memory -sensible choice of the sequential number range depends on -the packet rate -a packet's probable \"lifetime\" within the network",
+        "max_score": 1.5,
+        "count": {
+            "incorrect": 1,
+            "correct": 66,
+            "partially correct": 11
+        }
+    },
+    "q007": {
+        "id": "Q007",
+        "question": "in the lecture you have learned about congestion control with tcp. name the 2 phases of congestion control and explain how the congestion window (cwnd) and the slow start threshold (ss_thresh) change in each phase (after initialization, where cwnd = 1 and ss_thresh = advertised window size) in 1-4 sentences .",
+        "reference_answer": "slow start (cwnd less than ss_thresh): \nin the slow start phase, cwnd is incremented by one every time a segment is acknowledged. this results in an exponential growth as cwnd is essentially doubled after each round trip time (rtt). this is done until either a packet is lost or ss_thresh is reached. when cwnd >= ss_thresh, the congestion avoidance phase is entered. \nafter a packet is lost / congestion the following adaption is made in both phases: ss_thresh = cwnd / 2. then cwnd is reset to 1. \n\ncongestion avoidance (cwnd >= ss_thresh):: \nin the congestion avoidance phase, cwnd is incremented more slowly. there are different incrementation strategies, but they usually grow linearly, e.g. only increment cwnd by 1 after all sent segments have been acknowledged. this is done until a packet is lost. typically, this means that cwnd less than ss_thresh and the slow start phase is entered again. \nafter a packet is lost / congestion the following adaption is made in both phases: ss_thresh = cwnd / 2. then cwnd is reset to 1.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 7,
+            "partially correct": 47
+        }
+    },
+    "q008": {
+        "id": "Q008",
+        "question": "in the lecture you have learned about congestion control with tcp. name the 2 phases of congestion control and explain how the congestion window (cwnd) and the slow start threshold (ss_thresh) change in each phase (after initialization, where cwnd = 1 and ss_thresh = advertised window size) in 1-4 sentences total.",
+        "reference_answer": "slow start: ss_thresh is constant, increment cwnd by one every time a segment is acknowledged until ss_tresh is reached, then slowed increase of cwnd congestion avoidance: cwnd is reset to 1 after adjusting ss_tresh = cwnd / 2",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 12,
+            "partially correct": 57
+        }
+    },
+    "q009": {
+        "id": "Q009",
+        "question": "let us assume that you flip a coin 6 times where the probability of heads (h) showing up is 0.6. please arrange the following events in the increasing order of their likelihood (i.e., least probable → most probable): ● event a: you see at least three h’s ● event b: you see the sequence hhhttt ● event c: you see exactly three h’s include justification in your answer headers.",
+        "reference_answer": "the correct sequence is bca , where b is the least probable. one of the following justifications should be given:\n\t\t● event b is a subset/part/special case of c, and c is a subset/part/special case of a\n\t\t● event b is more specific/strict than c and c is more specific/strict than a\n\t\t● an actual, correct calculation of the probabilities:\n\t\t○ p(b) = 0.6 * 0.6 * 0.6 * 0.4 * 0.4 *0.4 = 0.6^3 *0.4^3 = 0.013824 \n\t\t○ p(c) = (6 choose 3) * p(b) = 0.27648 \n\t\t○ p(a) = p(c) + p(y=4) + p(y=5) + p(y=6) = 1 - p(y=0) - p(y=1) - p(y=2)\n\t\t= (6 choose 3) * 0.6^3 * 0.4^3 + (6 choose 4) * 0.6^4 * 0.4^2 +(6 choose 5) *\n\t\t0.6^5 * 0.4 + (6 choose 6) * 0.6^6\n\t\t= 0.27648 + 15 * 0.020736 + 6 * 0.031104 + 1 * 0.046656\n\t\t= 0.8208 \n\t\t○ the answer may be rounded to up to 2 decimal places, e.g. p(b) = 0.01 or\n\t\tp(b) = 0.014\n\t\t○ it is also sufficient to give a formula without the actual calculation, if it is apparent that p(b) less than p(c) less than p(a), e.g. by stating p(c) = 20 * p(b)",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 34,
+            "partially correct": 13
+        }
+    },
+    "q010": {
+        "id": "Q010",
+        "question": "name the 3 service classes the data link layer offers and explain the differences between the classes.",
+        "reference_answer": "1.unconfirmed connectionless - no ack, loss of data possible, no flow control, no connect or disconnect.\n2.confirmed connectionless - with ack, no loss of data (timeout and retransmit instead→ duplicates and sequence errors possible), no flow control, no connect or disconnect.\n3.connection-oriented - no data loss, duplication or sequencing errors. instead a 3 phased communication with connect and disconnect, and flow control",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 58,
+            "partially correct": 8
+        }
+    },
+    "q011": {
+        "id": "Q011",
+        "question": "please explain the problem with \"distributed queue dual buses\" that was discussed in the lecture in 1-3 sentences.",
+        "reference_answer": "depending on your position in the bus station have a disadvantage/advantage when reserving transmission rights.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 58,
+            "partially correct": 9
+        }
+    },
+    "q012": {
+        "id": "Q012",
+        "question": "state at least 4 of the differences shown in the lecture between the udp and tcp headers.",
+        "reference_answer": "possible differences :\nthe upd header (8 bytes) is much shorter than the tcp header (20-60 bytes)\nthe udp header has a fixed length while the tcp header has a variable length\nfields contained in the tcp header and not the udp header :\n-sequence number\n-acknowledgment number\n-reserved\n-flags/control bits\n-advertised window\n-urgent pointer\n-options + padding if the options are\nudp includes the packet length (data + header) while tcp has the header length/data offset (just header) field instead\nthe sender port field is optional in udp, while the source port in tcp is necessary to establish the connection",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 1,
+            "correct": 42,
+            "partially correct": 12
+        }
+    },
+    "q013": {
+        "id": "Q013",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 4,
+            "correct": 26,
+            "partially correct": 22
+        }
+    },
+    "q014": {
+        "id": "Q014",
+        "question": "transparent bridges manage a bridge table for the forwarding process. please describe what information the table holds and how it is modified during the backwards learning phase. how is the table used in the forwarding process and what is one benefit of that? please answer the question in 2-5 sentences. ",
+        "reference_answer": "1.a mapping between destinations/stations (macs) and outgoing lan interfaces.\n2.this table is initially empty and received packages are flooded on every line. when a bridge receives a frame (as the bridge runs in promiscuous mode it listens in on all the traffic arriving at its lan links) with source address q on lan l, it adds the timestamped entry “q can be reached over l” to the table and the next time a packet with destination q arrives, it is forwarded on link l. the time-stamp is used to update or purge old entries. therefore, it learns by observing the incoming traffic.\n3.to do selective forwarding instead of flooding. \n4.i)less duplication/unnecessary flooding is prevented.\nii)less congestion.\niii)better bandwidth usage than flooding.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 2,
+            "correct": 11,
+            "partially correct": 42
+        }
+    },
+    "q015": {
+        "id": "Q015",
+        "question": "what are the challenges of mobile routing compared to routing in fixed and wired networks? please name and describe two challenges.",
+        "reference_answer": "possible challenges:\n1.adaptation: the network has to handle the dynamic positioning of the nodes/topology changes. additionally, nodes can leave or join the network anywhere (within signal range) at any time.\n2.security: interception of packets or injection of faulty packages is easily possible in wireless networks. this may necessitate encryption and authentication.\n3.medium access control: wireless networks feature new possibilities for inference and collisions of the transmitted signals. see the following correct example challenges:\ni)hidden terminal: nodes’ transmissions may collide at other nodes without them noticing, because they are out of detection range of each other (a and c in this example) and therefore sense the medium to be free even though there is an overlap of the transmission ranges. \nii)exposed terminal: nodes (c in this example) may not realize they could send collision-free, because a node in their detection range (b) is sending and they, therefore, detect the medium as busy, but the sending node (b) is out of the detection range of the destination node (d) so that no collision would occur.\niii)near and far terminals: signal strength decreases proportionally to the square of distance, so closer nodes may drown out the weaker signals of nodes farther away.\n4.quality of service (qos): due to the rapidly changing network topology, imprecise network information, and resource constraints of participating nodes, it is challenging to provide the desired qos. additionally, signal quality may also decline due to noise and occlusion.\n5.scalability: since it is not possible to know the number of participating nodes beforehand, it is vital that routing protocols, etc. are capable of dealing with increasing network sizes and workloads. \n6.heterogeneity: nodes may have different capabilities, responsibilities, and constraints, e.g. processing capacity, transmission ranges\n7.dependability: providing consistent, performant, and reliable routing behavior that higher-level services can trust is challenging in such a dynamic environment. \n8.power consumption: as most mobile devices are battery-powered, power consumption becomes an important optimization factor in routing, etc.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 30,
+            "partially correct": 21
+        }
+    },
+    "q016": {
+        "id": "Q016",
+        "question": "what is the purpose of reverse path forwarding and reverse path broadcast? how do they work?",
+        "reference_answer": "purpose: both implement a more efficient kind (in terms of duplicate packets) of broadcasting than flooding / to minimize the number of duplicate packets in the network when broadcasting.\n\nreverse path forwarding:  each node has a routing table stemming from unicast routing algorithms. when receiving a packet of sender s from neighbor n at node x, check the routing table and only forward the packet to all adjacent nodes (except for n) when you would send packets to s over n → the assumption is that the packet used the best route until now.\nreverse path broadcast: nodes monitor unicast traffic to learn which paths in the network they are a part of, that is node x knows that is on the best path between two nodes a and b if it receives unicast packets coming from a and going to b or visa versa. in other words, each node knows which spanning trees it is part of in the network. reverse path broadcasting works identical to reverse path forwarding with the exception that it only forwards packets on edges that are part of a spanning tree (again excluding the incoming line to n).",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 23,
+            "partially correct": 34
+        }
+    },
+    "q017": {
+        "id": "Q017",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 4,
+            "correct": 20,
+            "partially correct": 39
+        }
+    },
+    "q018": {
+        "id": "Q018",
+        "question": "what are extension headers in ipv6 and where are they located in a packet? what is the main advantage of extension headers compared to ipv4?",
+        "reference_answer": "extension headers are used to extend the fixed ipv6 header with additional, optional network layer information. if present, they are located between the fixed header/main header and payload/upper-layer header/ transport-layer header.\n\nmain advantage: one of the following advantages are considered fully correct:\n1. it allows the appending of new options without changing the header.\n2. ipv6 packets with optional headers are typically processed faster/simpler by intermediate devices as most of the options are ignored (except “hop-by-hop extension”) while they are processed by all routers in ipv4 unless ordered otherwise.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 24,
+            "partially correct": 28
+        }
+    },
+    "q019": {
+        "id": "Q019",
+        "question": "what are the objectives of ipv6? please state at least 4 objectives. ",
+        "reference_answer": "to support billions of end-systems.\nto reduce routing tables.\nto simplify protocol processing with simplified header.\nto increase security.\nto support real time data traffic (quality of service).\nflow label, traffic class.\nto provide multicasting.\nto support mobility (roaming).\nto be open for change (future): extension headers for additional change incorporation.\nto coexistence with existing protocols.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 60,
+            "partially correct": 1
+        }
+    },
+    "q020": {
+        "id": "Q020",
+        "question": "what happens to the \"collision domain diameter\" if you use csma / cd and increase the speed of a network by a factor of 10, eg from 10mb / s to 100mb / s (all else being equal)?",
+        "reference_answer": "diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 1,
+            "correct": 55,
+            "partially correct": 1
+        }
+    },
+    "q021": {
+        "id": "Q021",
+        "question": "what is \"frame bursting\"? also, give 1 advantage and disadvantage compared to the carrier extension.",
+        "reference_answer": "frame bursting reduces the overhead for transmitting small frames by concatenating a sequence of multiple frames in one single transmission, without ever releasing control of the channel.\nadvantage :it is more efficient than carrier extension as single frames not filled up with garbage.\ndisadvantage :need frames waiting for transmission or buffering and delay of frames",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 54,
+            "partially correct": 10
+        }
+    },
+    "q022": {
+        "id": "Q022",
+        "question": "what is the difference between asynchronous and synchronous transmission mode in the data link layer.",
+        "reference_answer": "asynchronous transmission: every character a self-contained unit surrounded by a start bit and a stop bit, which is an easy and cheap pattern, but causes low transmission rates.\n\nsynchronous transmission: several characters pooled to a continuous stream of data (frames), frames defined by syn or flag, higher complexity, but higher transmission rates. requires synchronization between sender and receiver.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 60,
+            "partially correct": 3
+        }
+    },
+    "q023": {
+        "id": "Q023",
+        "question": "what is the “dynamic host configuration protocol (dhcp)”? what is it used for? ",
+        "reference_answer": "the dynamic host configuration protocol (dhcp) is a network management protocol used in internet protocol (ip) networks, whereby a dhcp server dynamically assigns an ip address and other network configuration parameters to each device on the network. further, dhcp has largely replaced rarp (and bootp)\n\t uses of dhcp are: simplifies installation and configuration of end systems. allows for manual and automatic ip address assignment. may provide additional configuration information  (dns server, netmask, default router, etc.)",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 0,
+            "correct": 35,
+            "partially correct": 27
+        }
+    },
+    "q024": {
+        "id": "Q024",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 16,
+            "correct": 39,
+            "partially correct": 9
+        }
+    },
+    "q025": {
+        "id": "Q025",
+        "question": "why can duplicate packets be a problem in a network? please state your answer in a single sentence.",
+        "reference_answer": "if the receiver is not capable of differentiating between valid and duplicated packets it may act on the same information twice.",
+        "max_score": 0.5,
+        "count": {
+            "incorrect": 0,
+            "correct": 74,
+            "partially correct": 2
+        }
+    },
+    "q026": {
+        "id": "Q026",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "max_score": 0.5,
+        "count": {
+            "incorrect": 18,
+            "correct": 42,
+            "partially correct": 23
+        }
+    }
+}
