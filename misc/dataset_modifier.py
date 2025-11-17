@@ -169,17 +169,11 @@ questions = get_json('data/metadata/questions.json')
 print(__name__, '\n\n')
 if __name__ == '__main__':
 
+    for file in file_names:
+        data = get_json('./data/updated/formatted/'+file+'.json')
 
-    data = get_json('./data/updated/formatted/'+'train'+'.json')
+        data = separate_correct_incorrect(data)
 
-    for record in data:
-        print(record['id'][7:])
-        count = questions[record['id'][7:]]['count']
-        if record['verification_feedback'].lower() == 'correct':
-            count['correct'] += 1
-        elif record['verification_feedback'].lower() == 'incorrect':
-            count['incorrect'] += 1
-        elif record['verification_feedback'].lower() == 'partially correct':
-            count['partially correct'] += 1
-
-    save_json(questions, './data/metadata/questions.json')
+        save_json(data['incorrect'], f'./data/updated/incorrect/{file}.json')
+        save_json(data['correct'], f'./data/updated/correct/{file}.json')
+        save_json(data['partially_correct'], f'./data/updated/partially_correct/{file}.json')

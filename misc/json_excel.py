@@ -17,7 +17,7 @@ questions = get_json('data/metadata/questions.json')
 attempts_by_qid = {}   # "q001": [attempt1, attempt2]
 
 for file in file_names:
-    data = get_json('data/updated/formatted/' + file + '.json')
+    data = get_json('data/updated/augmented/' + 'train' + '.json')
 
     for rec in data:
         # extract "q001" from "smp1234q001"
@@ -134,4 +134,4 @@ for qid, attempts in attempts_by_qid.items():
 
 sorted_names = sorted(wb.sheetnames)
 wb._sheets = [wb[name] for name in sorted_names]
-wb.save("data/metadata/samples.xlsx")
+wb.save("data/metadata/augmented_samples.xlsx")

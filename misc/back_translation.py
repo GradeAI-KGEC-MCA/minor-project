@@ -2,7 +2,7 @@ from transformers import MarianMTModel, MarianTokenizer
 import torch
 import json
 import random
-from tqdm import tqdm  # <-- add this
+from tqdm import tqdm  
 
 # Utils
 def save_json(data, path):
@@ -21,7 +21,7 @@ def combine_data(*args):
     return combined
 
 # Load original data
-original_data = get_json('./data/augmented_train.json')
+original_data = get_json('./data/augmented/synonym_replacement.json')
 
 # Models
 en_to_es_model_name = "Helsinki-NLP/opus-mt-en-es"
@@ -65,9 +65,6 @@ back_translated_records = [
 ]
 
 # Combine and save
-combined_data = combine_data(original_data, back_translated_records)
-save_json(combined_data, './data/train.json')
 
 print("Original:", len(original_data))
 print("Back-translated:", len(back_translated_records))
-print("Combined:", len(combined_data))

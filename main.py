@@ -1,12 +1,20 @@
-# import model.test
-# import model.test_results.temp
-
+# from misc.dataset_modifier import get_json, json
 # from misc.synonym_replacement import synonym_augment
 
-# text = "The queue reaches full capacity when the arrival rate exceeds the service rate."
+# data = get_json('./data/train.json')
+# res = []
 
-# samples = synonym_augment(text)
+# for record in data:
+#     text = record['provided_answer']
+#     aug_samples = synonym_augment(text)
 
-# for s in samples:
-#     print("AUG:", s)
+#     for t in aug_samples:
+#         aug_record = record.copy()
+#         aug_record['provided_answer'] = t
+#         res.append(aug_record)
 
+# path = './data/augmented/synonym_replacement.json'
+# with open(path, 'w', encoding='utf8') as f:
+#     json.dump(res, f, indent=4)
+
+import misc.back_translation
