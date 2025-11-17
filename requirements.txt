@@ -1,7 +1,10 @@
 numpy
 pandas
+torch
 scikit-learn
 lime
 shap
 datasets
 kagglehub
+openpyxl
+transformers
