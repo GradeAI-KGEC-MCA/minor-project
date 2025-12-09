@@ -11,3 +11,4 @@ transformers
 nltk
 spacy
 sentence_transformers
+ipykernel

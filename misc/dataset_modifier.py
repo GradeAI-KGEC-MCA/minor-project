@@ -63,7 +63,7 @@ def remove_partial_correct_data(data):
     
     return binary_data
 
-def separate_correct_incorrect(data):
+def separate(data):
     correct = []
     partially_correct = []
     incorrect = []
@@ -105,10 +105,10 @@ def count_original_data(data, key):
     
     return len(st)
 
-def get_q_id(question):
-    for q in questions:
-        if question.lower() == questions[q]['question']:
-            return q
+# def get_q_id(question):
+#     for q in questions:
+#         if question.lower() == questions[q]['question']:
+#             return q
 
 def get_questions(data):
     q_set = set()
@@ -159,21 +159,37 @@ def lower_case_data(data):
                 record[key] = value.lower()
     return data
 
-def generate_id(data):
-    for i, record in enumerate(data):
-        record['id'] = f'smp{i:04d}{get_q_id(record['question'])}'
+# def generate_id(data):
+#     for i, record in enumerate(data):
+#         record['id'] = f'smp{i:04d}{get_q_id(record['question'])}'
     
-    return data
+#     return data
 
-questions = get_json('data/metadata/questions.json')
-print(__name__, '\n\n')
+def curate_data():
+    questions = list(get_json('data/metadata/acceptable.json').keys())
+
+    for i in ['unseen_answers.json']:
+        curated = []
+        rejected = []
+        data = get_json(f'data/updated/formatted/{i}')
+        for record in data:
+            if record['id'][-4:] in questions:
+                curated.append(record)
+            else:
+                rejected.append(record)
+
+        print(f'{i}: Rejected: {len(rejected)}')
+        save_json(rejected, f'./data/rejected/{i}')
+
+        print(f'{i}: Accepted: {len(curated)}')
+        save_json(curated, f'./data/curated/{i}')
+
 if __name__ == '__main__':
+    data = get_json('data/updated/formatted/unseen_questions.json')
+    data = separate(data)
 
-    for file in file_names:
-        data = get_json('./data/updated/formatted/'+file+'.json')
-
-        data = separate_correct_incorrect(data)
-
-        save_json(data['incorrect'], f'./data/updated/incorrect/{file}.json')
-        save_json(data['correct'], f'./data/updated/correct/{file}.json')
-        save_json(data['partially_correct'], f'./data/updated/partially_correct/{file}.json')
+    for i in data:
+        print(f'{i}: {len(data[i])}')
+    
+else:
+    print(__name__, '\n\n')
