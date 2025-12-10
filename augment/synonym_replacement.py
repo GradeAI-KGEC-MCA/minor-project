@@ -9,7 +9,7 @@ nltk.download("omw-1.4")
 
 
 class SynonymAugmenter:
-    def __init__(self, max_words=5, replace_n=3, similarity_lb=0.6, similarity_ub=0.85,
+    def __init__(self, max_words=5, replace_n=3, similarity_lb=0.7, similarity_ub=0.85,
                  length_lb=0.7, length_ub=1.3, max_attempts=20):
         # Models
         self._nlp = spacy.load("en_core_web_sm")
@@ -62,6 +62,14 @@ class SynonymAugmenter:
         em_a = self._embed.encode(a, convert_to_tensor=True)
         em_b = self._embed.encode(b, convert_to_tensor=True)
         return util.cos_sim(em_a, em_b).item()
+    
+    def deviation_score(sim, lb=0.7, ub=0.85):
+        if lb <= sim <= ub:
+            # In bounds → distance from upper bound (smaller is better)
+            return ub - sim
+        else:
+            # Out of bounds → distance to nearest bound
+            return min(abs(sim - lb), abs(sim - ub)) + 1 
 
     def valid_grammar(self, text):
         doc = self._nlp(text)

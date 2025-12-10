@@ -1,6 +1,6 @@
 from transformers import MarianMTModel, MarianTokenizer
 import torch
-import sentencepiece
+
 class Backtranslation:
     # Models
     def __init__(self):
@@ -16,6 +16,7 @@ class Backtranslation:
         print('Device: ', self._device)
         self._en_to_es_model.to(self._device)
         self._es_to_en_model.to(self._device)
+    
 
     def translate(self, answer):
         print('Generating Translation...')
