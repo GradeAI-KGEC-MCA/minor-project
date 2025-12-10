@@ -63,7 +63,7 @@ class SynonymAugmenter:
         em_b = self._embed.encode(b, convert_to_tensor=True)
         return util.cos_sim(em_a, em_b).item()
     
-    def deviation_score(sim, lb=0.7, ub=0.85):
+    def deviation_score(self, sim, lb=0.7, ub=0.85):
         if lb <= sim <= ub:
             # In bounds → distance from upper bound (smaller is better)
             return ub - sim

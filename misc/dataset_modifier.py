@@ -77,8 +77,8 @@ def separate(data):
     
     return {'correct':correct, 'incorrect': incorrect, 'partially_correct': partially_correct}
 
-def save_json(data, path):
-    inp = input('Do you want to save? [Y/n]: ').lower()
+def save_json(data, path, ask=True):
+    inp = input('Do you want to save? [Y/n]: ').lower() if ask == True else 'y'
     if inp in ['', 'y', 'yes']:
         with open(path, 'w', encoding='utf8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
