@@ -1,165 +1,106 @@
+import random
+import spacy
+from nltk.corpus import wordnet as wn
+from sentence_transformers import SentenceTransformer, util
 import nltk
+
 nltk.download("wordnet")
 nltk.download("omw-1.4")
-import random
-from nltk.corpus import wordnet as wn
-import spacy
-from sentence_transformers import SentenceTransformer, util
-# load spaCy + SBERT
-try:
-    _nlp = spacy.load("en_core_web_sm")
-except:
-    import os
-    os.system("python -m spacy download en_core_web_sm")
-    _nlp = spacy.load("en_core_web_sm")
-
-_embed = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-
-STOPWORDS = _nlp.Defaults.stop_words
 
 
-# ---------- HELPERS ----------
+class SynonymAugmenter:
+    def __init__(self, max_words=5, replace_n=3, similarity_lb=0.6, similarity_ub=0.85,
+                 length_lb=0.7, length_ub=1.3, max_attempts=20):
+        # Models
+        self._nlp = spacy.load("en_core_web_sm")
+        self._embed = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        self._stopwords = self._nlp.Defaults.stop_words
+        self.max_words = max_words
+        self.replace_n = replace_n
+        self.similarity_lb = similarity_lb
+        self.similarity_ub = similarity_ub
+        self.length_lb = length_lb
+        self.length_ub = length_ub
+        self.max_attempts = max_attempts
 
-def _get_synonyms(word, pos_tag):
-    """POS-matched synonym extraction with heavy filtering."""
-    pos_map = {
-        "NOUN": wn.NOUN,
-        "VERB": wn.VERB,
-        "ADJ": wn.ADJ,
-        "ADV": wn.ADV
-    }
+    # -------- Helpers --------
+    def _get_synonyms(self, word, pos_tag):
+        pos_map = {"NOUN": wn.NOUN, "VERB": wn.VERB, "ADJ": wn.ADJ, "ADV": wn.ADV}
+        if pos_tag not in pos_map:
+            return []
 
-    if pos_tag not in pos_map:
-        return []
+        syns = set()
+        for synset in wn.synsets(word, pos_map[pos_tag]):
+            for lemma in synset.lemmas():
+                lemma_name = lemma.name().replace("_", " ").lower()
+                if lemma_name == word or not lemma_name.isalpha():
+                    continue
+                if len(lemma_name.split()) != 1 or abs(len(lemma_name) - len(word)) > 6:
+                    continue
+                syns.add(lemma_name)
+        return list(syns)
 
-    syns = set()
-    for synset in wn.synsets(word, pos_map[pos_tag]):
-        for lemma in synset.lemmas():
-            lemma_name = lemma.name().replace("_", " ").lower()
-
-            # filters
-            if lemma_name == word:
+    def _candidate_words(self, doc):
+        candidates = []
+        for token in doc:
+            if token.is_stop or token.text.lower() in self._stopwords or token.ent_type_:
                 continue
-            if len(lemma_name.split()) != 1:
+            if token.pos_ not in ["NOUN", "VERB", "ADJ", "ADV"] or not token.text.isalpha() or len(token.text) < 3:
                 continue
-            if not lemma_name.isalpha():
-                continue
-            if abs(len(lemma_name) - len(word)) > 6:
-                continue
+            syns = self._get_synonyms(token.text.lower(), token.pos_)
+            if syns:
+                candidates.append((token.text, token.pos_, syns))
+        return candidates
 
-            syns.add(lemma_name)
-
-    return list(syns)
-
-
-def _candidate_words(doc):
-    """Extract good synonym-replaceable tokens."""
-    candidates = []
-
-    for token in doc:
-        if token.is_stop:
-            continue
-        if token.text.lower() in STOPWORDS:
-            continue
-        if token.ent_type_:
-            continue
-        if token.pos_ not in ["NOUN", "VERB", "ADJ", "ADV"]:
-            continue
-        if not token.text.isalpha():
-            continue
-        if len(token.text) < 3:
-            continue
-
-        syns = _get_synonyms(token.text.lower(), token.pos_)
-        if syns:
-            candidates.append((token.text, token.pos_, syns))
-
-    return candidates
-
-
-def _replace_words(text, replacements):
-    """Apply replacements into the raw text safely."""
-    new_text = text
-    for orig, repl in replacements.items():
-        new_text = new_text.replace(orig, repl)
-    return new_text
-
-
-def semantic_sim(a, b):
-    em_a = _embed.encode(a, convert_to_tensor=True)
-    em_b = _embed.encode(b, convert_to_tensor=True)
-    return util.cos_sim(em_a, em_b).item()
-
-
-def valid_grammar(text):
-    doc = _nlp(text)
-    if len(doc) == 0:
-        return False
-    if doc.has_annotation("DEP") is False:
-        return False
-    return True
-
-
-# ---------- MAIN AUGMENT FUNCTION ----------
-
-def synonym_augment(text, max_words=5, replace_n=3):
-    """
-    text: input string
-    max_words: pick up to N candidate tokens
-    replace_n: replace exactly N words per variant
-    """
-
-    doc = _nlp(text)
-    candidates = _candidate_words(doc)
-
-    if len(candidates) < replace_n:
-        return []
-
-    # choose up to max_words from candidate list
-    selected = random.sample(candidates, min(max_words, len(candidates)))
-
-    attempts = 0
-
-    threshold = {
-        'similarity_ub': .85,
-        'similarity_lb': .6,
-        'length_ub': 1.3,
-        'length_lb': .7
-    }
-
-    print('Generating replacements...')
-    while True:
-        attempts += 1
-        if attempts >= 20:
-            print('Attempts Exceeded. Proceeding with back-translation: ')
-            return ''
-
-        # choose N random words
-        replace_group = random.sample(selected, replace_n)
-
-        # build replacement map
-        repl_map = {}
-        for orig_word, pos, syns in replace_group:
-            repl_map[orig_word] = random.choice(syns)
-
-        new_text = _replace_words(text, repl_map)
-        
-        # ---------- QC: GRAMMAR ----------
-        if not valid_grammar(new_text):
-            continue
-
-        # ---------- QC: SIMILARITY ----------
-        sim = semantic_sim(text, new_text)
-        if sim < threshold["similarity_lb"] or sim > threshold["similarity_ub"]:
-            continue
-
-        # ---------- QC: LENGTH ----------
-        if len(new_text) < len(text) * threshold["length_lb"]:
-            continue
-        if len(new_text) > len(text) * threshold["length_ub"]:
-            continue
-        
-
-        print(f'Succeeded at attempt: {attempts}')
-        print(sim)
+    def _replace_words(self, text, replacements):
+        new_text = text
+        for orig, repl in replacements.items():
+            new_text = new_text.replace(orig, repl)
         return new_text
+
+    def semantic_sim(self, a, b):
+        em_a = self._embed.encode(a, convert_to_tensor=True)
+        em_b = self._embed.encode(b, convert_to_tensor=True)
+        return util.cos_sim(em_a, em_b).item()
+
+    def valid_grammar(self, text):
+        doc = self._nlp(text)
+        if len(doc) == 0 or not doc.has_annotation("DEP"):
+            return False
+        return True
+
+    # -------- Main augment function --------
+    def augment(self, text):
+        doc = self._nlp(text)
+        candidates = self._candidate_words(doc)
+        if len(candidates) < self.replace_n:
+            return ""  # fallback to back-translation
+
+        selected = random.sample(candidates, min(self.max_words, len(candidates)))
+
+        attempts = 0
+        while True:
+            attempts += 1
+            if attempts > self.max_attempts:
+                print("Max attempts exceeded. Returning fallback.")
+                return ""
+
+            replace_group = random.sample(selected, self.replace_n)
+            repl_map = {orig: random.choice(syns) for orig, _, syns in replace_group}
+            new_text = self._replace_words(text, repl_map)
+
+            # QC: Grammar
+            if not self.valid_grammar(new_text):
+                continue
+
+            # QC: Semantic similarity
+            sim = self.semantic_sim(text, new_text)
+            if sim < self.similarity_lb or sim > self.similarity_ub:
+                continue
+
+            # QC: Length
+            if len(new_text) < len(text) * self.length_lb or len(new_text) > len(text) * self.length_ub:
+                continue
+
+            print(f"Augmentation succeeded after {attempts} attempts, similarity={sim:.3f}")
+            return new_text
