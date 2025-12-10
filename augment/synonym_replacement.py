@@ -1,6 +1,6 @@
 import nltk
-# nltk.download("wordnet")
-# nltk.download("omw-1.4")
+nltk.download("wordnet")
+nltk.download("omw-1.4")
 import random
 from nltk.corpus import wordnet as wn
 import spacy
@@ -85,13 +85,13 @@ def _replace_words(text, replacements):
     return new_text
 
 
-def _semantic_sim(a, b):
+def semantic_sim(a, b):
     em_a = _embed.encode(a, convert_to_tensor=True)
     em_b = _embed.encode(b, convert_to_tensor=True)
     return util.cos_sim(em_a, em_b).item()
 
 
-def _valid_grammar(text):
+def valid_grammar(text):
     doc = _nlp(text)
     if len(doc) == 0:
         return False
@@ -102,11 +102,10 @@ def _valid_grammar(text):
 
 # ---------- MAIN AUGMENT FUNCTION ----------
 
-def synonym_augment(text, max_words=5, combos=5, replace_n=3):
+def synonym_augment(text, max_words=5, replace_n=3):
     """
     text: input string
     max_words: pick up to N candidate tokens
-    combos: how many outputs we try to generate
     replace_n: replace exactly N words per variant
     """
 
@@ -119,11 +118,21 @@ def synonym_augment(text, max_words=5, combos=5, replace_n=3):
     # choose up to max_words from candidate list
     selected = random.sample(candidates, min(max_words, len(candidates)))
 
-    results = []
     attempts = 0
 
-    while len(results) < combos and attempts < combos * 3:
+    threshold = {
+        'similarity_ub': .85,
+        'similarity_lb': .6,
+        'length_ub': 1.3,
+        'length_lb': .7
+    }
+
+    print('Generating replacements...')
+    while True:
         attempts += 1
+        if attempts >= 20:
+            print('Attempts Exceeded. Proceeding with back-translation: ')
+            return ''
 
         # choose N random words
         replace_group = random.sample(selected, replace_n)
@@ -134,23 +143,23 @@ def synonym_augment(text, max_words=5, combos=5, replace_n=3):
             repl_map[orig_word] = random.choice(syns)
 
         new_text = _replace_words(text, repl_map)
-
-        # ---------- QC: SIMILARITY ----------
-        sim = _semantic_sim(text, new_text)
-        if sim < 0.55 or sim > 0.88:
+        
+        # ---------- QC: GRAMMAR ----------
+        if not valid_grammar(new_text):
             continue
 
-        # ---------- QC: GRAMMAR ----------
-        if not _valid_grammar(new_text):
+        # ---------- QC: SIMILARITY ----------
+        sim = semantic_sim(text, new_text)
+        if sim < threshold["similarity_lb"] or sim > threshold["similarity_ub"]:
             continue
 
         # ---------- QC: LENGTH ----------
-        if len(new_text) < len(text) * 0.7:
+        if len(new_text) < len(text) * threshold["length_lb"]:
             continue
-        if len(new_text) > len(text) * 1.3:
+        if len(new_text) > len(text) * threshold["length_ub"]:
             continue
+        
 
-        results.append(new_text)
+        print(f'Succeeded at attempt: {attempts}')
         print(sim)
-
-    return results
+        return new_text
