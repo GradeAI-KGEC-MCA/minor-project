@@ -1,34 +1,39 @@
 from transformers import MarianMTModel, MarianTokenizer
 import torch
 
-class Backtranslation:
+class Translator:
     # Models
     def __init__(self):
-        _en_to_es_model_name = "Helsinki-NLP/opus-mt-en-es"
-        _es_to_en_model_name = "Helsinki-NLP/opus-mt-es-en"
+        _model_name_list = [''
+        'Helsinki-NLP/opus-mt-en-es',
+        'Helsinki-NLP/opus-mt-en-fr',
+        'Helsinki-NLP/opus-mt-es-fr',
+        'Helsinki-NLP/opus-mt-es-en',
+        'Helsinki-NLP/opus-mt-fr-en'
+        ]
 
-        self._en_to_es_tokenizer = MarianTokenizer.from_pretrained(_en_to_es_model_name)
-        self._en_to_es_model = MarianMTModel.from_pretrained(_en_to_es_model_name).eval()
-        self._es_to_en_tokenizer = MarianTokenizer.from_pretrained(_es_to_en_model_name)
-        self._es_to_en_model = MarianMTModel.from_pretrained(_es_to_en_model_name).eval()
+        self.translators = {}
+
+        for n in _model_name_list:
+            model_name = n[-5:]
+            self.translators[model_name] = {
+                'tokenizer': MarianTokenizer.from_pretrained(n),
+                'model': MarianMTModel.from_pretrained(n).eval()
+            }
 
         self._device = "cuda" if torch.cuda.is_available() else "cpu"
         print('Device: ', self._device)
-        self._en_to_es_model.to(self._device)
-        self._es_to_en_model.to(self._device)
-    
+        for key in self.translators:
+            self.translators[key]['model'].to(self._device)
 
-    def translate(self, answer):
+    def translate(self, answer, lang_from, lang_to):
         print('Generating Translation...')
+        translator = self.translators[lang_from+'-'+lang_to]
+
         def text_translate(text, tokenizer, model):
             inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True).to(self._device)
             with torch.no_grad():
                 out = model.generate(**inputs, max_new_tokens=512)
             return tokenizer.decode(out[0], skip_special_tokens=True)
-
-        es = text_translate(answer, self._en_to_es_tokenizer, self._en_to_es_model)
-        back = text_translate(es, self._es_to_en_tokenizer, self._es_to_en_model)
-        return back
-
-
-
+        
+        return text_translate(answer, translator['tokenizer'], translator['model'])
