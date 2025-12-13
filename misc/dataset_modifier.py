@@ -183,13 +183,22 @@ def curate_data():
 
         print(f'{i}: Accepted: {len(curated)}')
         save_json(curated, f'./data/curated/{i}')
-
+    
+def find_data(data, id):
+    for record in data:
+        if record['id'] == id:
+            return record ['provided_answer']
+    
+    else:
+        return None
 if __name__ == '__main__':
-    data = get_json('data/updated/formatted/unseen_questions.json')
-    data = separate(data)
+    data = get_json('data/curated/train.json')
 
-    for i in data:
-        print(f'{i}: {len(data[i])}')
+    for record in data:
+        record['is_augmented'] = 'false'
+        record['question_id'] = 'q' + record['id'].split('q')[1]
+    
+    save_json(data, './data/curated/train.json')
     
 else:
     print(__name__, '\n\n')
