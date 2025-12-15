@@ -30,8 +30,7 @@ def compute_sample_weight(sample, class_weight):
 
     # source weight
     if sample.get("is_augmented", False):
-        conf = sample["confidence"]  # guaranteed >= 0.5
-        # map confidence [0.5, 1.0] → weight [0.5, 0.7]
+        conf = sample.get("confidence", 1.0)  # guaranteed > 0.5
         w_source = 0.5 + (conf - 0.5) * (0.7 - 0.5) / 0.5
     else:
         w_source = 1.0
