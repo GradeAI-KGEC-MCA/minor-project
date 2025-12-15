@@ -9,11 +9,20 @@ class QAClassifierDataset(torch.utils.data.Dataset):
         self.class_weights = class_weights
         self.is_train = is_train
 
+    def __len__(self):
+        return len(self.samples)
+    
     def __getitem__(self, idx):
         s = self.samples[idx]
 
+        input_text = (
+            f"Question:\n{s['question']}\n\n"
+            f"Reference Answer:\n{s['reference_answer']}\n\n"
+            f"Student Answer:\n{s['provided_answer']}"
+        )
+
         enc = self.tokenizer(
-            s["input_text"],
+            input_text,
             truncation=True,
             padding="max_length",
             max_length=512,
@@ -21,6 +30,7 @@ class QAClassifierDataset(torch.utils.data.Dataset):
         )
 
         item = {k: v.squeeze(0) for k, v in enc.items()}
+        print(item)
         item["labels"] = LABEL2ID[s["verification_feedback"]]
 
         if self.is_train:

@@ -4,7 +4,7 @@ from misc.dataset_modifier import get_json
 
 LABEL2ID = {
     "incorrect": 0,
-    "partial": 1,
+    "partially correct": 1,
     "correct": 2
 }
 
