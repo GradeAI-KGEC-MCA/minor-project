@@ -1,5 +1,7 @@
 import json
 import random
+import re
+
 folders = {
     'incorrect': './data/updated/incorrect/',
     'correct': './data/updated/correct/',
@@ -186,19 +188,67 @@ def curate_data():
     
 def find_data(data, id):
     for record in data:
+        if record is None: continue
         if record['id'] == id:
-            return record ['provided_answer']
+            return record
     
     else:
         return None
-if __name__ == '__main__':
-    data = get_json('data/curated/train.json')
-
-    for record in data:
-        record['is_augmented'] = 'false'
-        record['question_id'] = 'q' + record['id'].split('q')[1]
     
-    save_json(data, './data/curated/train.json')
+def extract_prediction(text, ID):
+        if not isinstance(text, str):
+            return None
+
+        # Find JSON object that contains "predicted_label"
+        match = re.search(
+            r'\{\s*"predicted_label"\s*:\s*"(correct|partial|incorrect|uncertain)"\s*,\s*"confidence"\s*:\s*[0-9.]+\s*\}',
+            text,
+            re.S
+        )
+
+        if not match:
+            return None
+
+        try:
+            data = json.loads(match.group())
+            return {
+                "ID": ID,
+                "predicted_label": data["predicted_label"],
+                "confidence": float(data["confidence"])
+            }
+        except Exception:
+            return None
+        
+
+if __name__ == '__main__':
+    auditted_result = get_json('data/metadata/audit.json')
+    aug = get_json('./data/augmented/aug.json')
+
+    audited_s = []
+    audited_u = []
+    discarded = []
+    for record in aug:
+
+        audit = find_data(auditted_result, record['id'])
+        if audit == None:
+            audited_u.append(record)
+
+        else:
+            print(audit)
+            if audit['confidence'] <= .5:
+                audited_u.append(record)
+            elif audit['predicted_label'] == record['verification_feedback']:
+                record['audit'] = audit['predicted_label']
+                audited_s.append(record)
+            else:
+                record['audit'] = audit['predicted_label']
+                discarded.append(record)
+    print('passed: ', len(audited_s))
+    save_json(audited_s, './data/augmented/passed.json')
+    print('uncertain: ', len(audited_u))
+    save_json(audited_u, './data/augmented/uncertain.json')
+    print('discarded: ', len(discarded))
+    save_json(discarded, './data/augmented/discarded.json')
     
 else:
     print(__name__, '\n\n')
