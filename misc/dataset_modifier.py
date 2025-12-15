@@ -218,12 +218,8 @@ def extract_prediction(text, ID):
             }
         except Exception:
             return None
-        
 
-if __name__ == '__main__':
-    auditted_result = get_json('data/metadata/audit.json')
-    aug = get_json('./data/augmented/aug.json')
-
+def merge_audit(auditted_result, aug):
     audited_s = []
     audited_u = []
     discarded = []
@@ -236,11 +232,15 @@ if __name__ == '__main__':
         else:
             print(audit)
             if audit['confidence'] <= .5:
+                record['audit'] = audit['predicted_label']
+                record['confidence'] = audit['confidence']
                 audited_u.append(record)
             elif audit['predicted_label'] == record['verification_feedback']:
                 record['audit'] = audit['predicted_label']
+                record['confidence'] = audit['confidence']
                 audited_s.append(record)
             else:
+                record['confidence'] = audit['confidence']
                 record['audit'] = audit['predicted_label']
                 discarded.append(record)
     print('passed: ', len(audited_s))
@@ -249,6 +249,23 @@ if __name__ == '__main__':
     save_json(audited_u, './data/augmented/uncertain.json')
     print('discarded: ', len(discarded))
     save_json(discarded, './data/augmented/discarded.json')
+
+if __name__ == '__main__':
+    augmented_set = get_json('./data/augmented/passed.json')
+    original_set = get_json('./data/curated/train.json')
+
+    audits = get_json('./data/metadata/audit.json')
+
+    # merge_audit(audits, augmented_set)
+
+    # for record in original_set:
+    #     pass
+    # data = combine_data(augmented_set, original_set)
+    # for _ in range(3):
+    #     random.shuffle(data)
+    # save_json(data, './data/updated/combined_set/train.json')
+
+    
     
 else:
     print(__name__, '\n\n')

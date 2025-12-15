@@ -95,7 +95,9 @@
         "original_answer": "the fact that you only need to send out the data as one packet and dont have to send a single packet for each receiver, you also dont need to know all the receivers as the tree will handle the transmission.",
         "original_sample_id": "smp1104q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp1104q017",
@@ -109,7 +111,9 @@
         "original_answer": "the fact that you only need to send out the data as one packet and dont have to send a single packet for each receiver, you also dont need to know all the receivers as the tree will handle the transmission.",
         "original_sample_id": "smp1104q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0793q012",
@@ -221,7 +225,9 @@
         "original_answer": "1. purpose:  help prevent ip address spoofing. 2. rpf a sender broadcasts to all the stations. when a packet reaches a is ,the is will check the path. if it is the usually path. it will send to others",
         "original_sample_id": "smp1032q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0464q006",
@@ -235,7 +241,9 @@
         "original_answer": "use temporarily valid tsaps\n\nidentify connections individually\n- disadvantage: only for connection-oriented services\n\nidentify pdus individually\n- disadvantage: higher bandwidth usage",
         "original_sample_id": "smp0464q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0464q006",
@@ -249,7 +257,9 @@
         "original_answer": "use temporarily valid tsaps\n\nidentify connections individually\n- disadvantage: only for connection-oriented services\n\nidentify pdus individually\n- disadvantage: higher bandwidth usage",
         "original_sample_id": "smp0464q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1659q026",
@@ -277,7 +287,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0675q010",
@@ -291,7 +303,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0675q010",
@@ -305,7 +319,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0675q010",
@@ -319,7 +335,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0675q010",
@@ -333,7 +351,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0675q010",
@@ -347,7 +367,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0675q010",
@@ -361,7 +383,9 @@
         "original_answer": "1. flow control: ensures that a transmitter does not send faster than a receiver can receive\n2. framing: data are packed in a frame, this frame contains e.g. the data, destination address and source \n3. error detection: important to ensure that all data has been received correctly. if an error is detected, the receiver may be signalled to send the data again",
         "original_sample_id": "smp0675q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1068q017",
@@ -445,7 +469,9 @@
         "original_answer": "with multicasting compared to broadcasting, you have one-time sending instead of multiple sending. therefore it is important for all the is to have global knowledge of the multicast tree. this property applies to spanning trees and thus they can be used for multicasting. to use link state routing to construct a spanning tree for multicasting, the link state packets have to be expanded to contain information on the multicast groups. these periodically get broadcasted to all the other is and now each is can calculate a multicast tree.",
         "original_sample_id": "smp1111q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1109q017",
@@ -501,7 +527,9 @@
         "original_answer": "first address of the subnetwork: network address\nlast address of the subnetwork: broadcast address",
         "original_sample_id": "smp1684q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1684q026",
@@ -515,7 +543,9 @@
         "original_answer": "first address of the subnetwork: network address\nlast address of the subnetwork: broadcast address",
         "original_sample_id": "smp1684q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0394q005",
@@ -571,7 +601,9 @@
         "original_answer": "hop 1:\n(a,b,forward)\n(a,c,forward)\n(a,d,drop)<=d doesn't foward a message from a to f, because f doesn't receive unicast packets via d.\nhop 2:\n(b,e,forward)\n(c,f,drop)<=f doesn't foward a message from a to g, because g doesn't receive unicast packets via f.\nhop 3:\n(e,g,forward)\nhop 4:\n(g,h,drop)<=vertex h has only one neighbor from which it got the message, vertex h does not forward the message.",
         "original_sample_id": "smp0377q005",
         "is_augmented": "true",
-        "question_id": "q005"
+        "question_id": "q005",
+        "audit": "incorrect",
+        "confidence": 0.2
     },
     {
         "id": "aug00smp0378q005",
@@ -599,7 +631,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp1044q016",
@@ -613,7 +647,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp1044q016",
@@ -627,7 +663,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp1044q016",
@@ -641,7 +679,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp1044q016",
@@ -655,7 +695,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp1044q016",
@@ -669,7 +711,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp1044q016",
@@ -683,7 +727,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp1044q016",
@@ -697,7 +743,9 @@
         "original_answer": "reverse path forwarding (rpf) and reverse path broadcast (rpb) are used in networks with broadcasting ability to find the best paths between senders/receivers. they work by flooding the network with packets. the intermediate stations will receive the packets and broadcast them to every node attached to them, except to the node where it came from. to accomplish the best path, the is keeps track of where incoming packets were routed and if the packet has taken the best route. this is the case, when packets with a certain destination node always take this exact is port. in this way, the broadcast is done by using unicast paths. all other packets are not transmitted.",
         "original_sample_id": "smp1044q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1097q017",
@@ -711,7 +759,9 @@
         "original_answer": "property: the spanning tree does not have any loops.",
         "original_sample_id": "smp1097q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0827q012",
@@ -753,7 +803,9 @@
         "original_answer": "with spanning trees you are able to gain global knowledge of the multicast groups from an initial local knowledge, which makes the spanning trees appealing. in order to modify the link state routing to construct a spanning tree for multicasting you can use the normal procedure of the link state routing but also add the information on the multicast groups. with that each is calculates its own multicast trees with the locally available information. then based on the information about the multicast tree it determines which paths to use for transmitting packets.",
         "original_sample_id": "smp1074q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1108q017",
@@ -767,7 +819,9 @@
         "original_answer": "- good property: not all paths between the routes must be used. therefore, the network topology will be simplified and loop formation can be prevented. in other word, the reachability of network remains the same even though some links between routers are released. - mechanism to build spanning tree with link state routing: nodes will send its distance (or delay) to its neighbors periodically. then they can calculate the tree based on these information.",
         "original_sample_id": "smp1108q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1077q017",
@@ -781,7 +835,9 @@
         "original_answer": "the goal of multicasting is to reach multiple - all in the case of broadcasting -other nodes in a network. a spanning tree contains the minimal amount of hops to reach all destinations which makes it a perfect candidate for this purpose.    \n\t\n\tin link state routing, this tree is shared across all nodes. link state packets now also contain information about the multicast groups. the nodes now calculate separate spanning trees depending on the new information from other nodes. now, we have a spanning tree for each multicast group which can be used to send the data on the shortest path.",
         "original_sample_id": "smp1077q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0452q006",
@@ -795,7 +851,9 @@
         "original_answer": "tsap is fast and simple, but is not always applicable.\nindividual conn identification\nindividual pdu identification",
         "original_sample_id": "smp0452q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp0452q006",
@@ -809,7 +867,9 @@
         "original_answer": "tsap is fast and simple, but is not always applicable.\nindividual conn identification\nindividual pdu identification",
         "original_sample_id": "smp0452q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug02smp0452q006",
@@ -823,7 +883,9 @@
         "original_answer": "tsap is fast and simple, but is not always applicable.\nindividual conn identification\nindividual pdu identification",
         "original_sample_id": "smp0452q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0452q006",
@@ -837,7 +899,9 @@
         "original_answer": "tsap is fast and simple, but is not always applicable.\nindividual conn identification\nindividual pdu identification",
         "original_sample_id": "smp0452q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1479q024",
@@ -1047,7 +1111,9 @@
         "original_answer": "a requirement is that we have an duplex connection and a cos or ccs.\nthe data from two side is roughly equal. the window size should be smaller than a half of seq. number.",
         "original_sample_id": "smp1521q024",
         "is_augmented": "true",
-        "question_id": "q024"
+        "question_id": "q024",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1661q026",
@@ -1117,7 +1183,9 @@
         "original_answer": "each sender has its own spanning tree but is do not need to know the spanning trees each router has information which path it would use for (unicast)-packets because of the unicast routing algorithms",
         "original_sample_id": "smp1043q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp1043q016",
@@ -1131,7 +1199,9 @@
         "original_answer": "each sender has its own spanning tree but is do not need to know the spanning trees each router has information which path it would use for (unicast)-packets because of the unicast routing algorithms",
         "original_sample_id": "smp1043q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp1043q016",
@@ -1145,7 +1215,9 @@
         "original_answer": "each sender has its own spanning tree but is do not need to know the spanning trees each router has information which path it would use for (unicast)-packets because of the unicast routing algorithms",
         "original_sample_id": "smp1043q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1656q026",
@@ -1271,7 +1343,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1268q020",
@@ -1285,7 +1359,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug05smp1268q020",
@@ -1299,7 +1375,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug06smp1268q020",
@@ -1313,7 +1391,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug09smp1268q020",
@@ -1327,7 +1407,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug10smp1268q020",
@@ -1341,7 +1423,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug11smp1268q020",
@@ -1355,7 +1439,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug12smp1268q020",
@@ -1369,7 +1455,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug13smp1268q020",
@@ -1383,7 +1471,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug15smp1268q020",
@@ -1397,7 +1487,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug16smp1268q020",
@@ -1411,7 +1503,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug17smp1268q020",
@@ -1425,7 +1519,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug18smp1268q020",
@@ -1439,7 +1535,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug21smp1268q020",
@@ -1453,7 +1551,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug22smp1268q020",
@@ -1467,7 +1567,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug23smp1268q020",
@@ -1481,7 +1583,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug24smp1268q020",
@@ -1495,7 +1599,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug25smp1268q020",
@@ -1509,7 +1615,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug27smp1268q020",
@@ -1523,7 +1631,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug29smp1268q020",
@@ -1537,7 +1647,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug30smp1268q020",
@@ -1551,7 +1663,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug31smp1268q020",
@@ -1565,7 +1679,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug32smp1268q020",
@@ -1579,7 +1695,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug33smp1268q020",
@@ -1593,7 +1711,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug34smp1268q020",
@@ -1607,7 +1727,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug35smp1268q020",
@@ -1621,7 +1743,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug36smp1268q020",
@@ -1635,7 +1759,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug37smp1268q020",
@@ -1649,7 +1775,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug38smp1268q020",
@@ -1663,7 +1791,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug39smp1268q020",
@@ -1677,7 +1807,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug40smp1268q020",
@@ -1691,7 +1823,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug42smp1268q020",
@@ -1705,7 +1839,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug43smp1268q020",
@@ -1719,7 +1855,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug44smp1268q020",
@@ -1733,7 +1871,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug45smp1268q020",
@@ -1747,7 +1887,9 @@
         "original_answer": "the collision domain diameter is the distance between two locations/nodes. when increasing the speed the maximum distance between two locations has to shrink.",
         "original_sample_id": "smp1268q020",
         "is_augmented": "true",
-        "question_id": "q020"
+        "question_id": "q020",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0382q005",
@@ -1943,7 +2085,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0901q014",
@@ -1957,7 +2101,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0901q014",
@@ -1971,7 +2117,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0901q014",
@@ -1985,7 +2133,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0901q014",
@@ -1999,7 +2149,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0901q014",
@@ -2013,7 +2165,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0901q014",
@@ -2027,7 +2181,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0901q014",
@@ -2041,7 +2197,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug08smp0901q014",
@@ -2055,7 +2213,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug09smp0901q014",
@@ -2069,7 +2229,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug10smp0901q014",
@@ -2083,7 +2245,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug11smp0901q014",
@@ -2097,7 +2261,9 @@
         "original_answer": "the transparent bridge receives every frame of each connected side. the bridge table holds the information about which components are attached to the network. that means the transparent bridge receives from the component a a frame which has the information \"a can be reached over lan l.\" in the forwarding process, the transparent bridge floods the network with this information, so that other bridges also have the information about component a. a benefit of flooding is that it uses the shortest path in the network.",
         "original_sample_id": "smp0901q014",
         "is_augmented": "true",
-        "question_id": "q014"
+        "question_id": "q014",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0373q005",
@@ -2125,7 +2291,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0438q006",
@@ -2139,7 +2307,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0438q006",
@@ -2153,7 +2323,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0438q006",
@@ -2167,7 +2339,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0438q006",
@@ -2181,7 +2355,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0438q006",
@@ -2195,7 +2371,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0438q006",
@@ -2209,7 +2387,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0438q006",
@@ -2223,7 +2403,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug08smp0438q006",
@@ -2237,7 +2419,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug09smp0438q006",
@@ -2251,7 +2435,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug10smp0438q006",
@@ -2265,7 +2451,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug11smp0438q006",
@@ -2279,7 +2467,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug12smp0438q006",
@@ -2293,7 +2483,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug13smp0438q006",
@@ -2307,7 +2499,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug14smp0438q006",
@@ -2321,7 +2515,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug15smp0438q006",
@@ -2335,7 +2531,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug16smp0438q006",
@@ -2349,7 +2547,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug17smp0438q006",
@@ -2363,7 +2563,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug18smp0438q006",
@@ -2377,7 +2579,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug19smp0438q006",
@@ -2391,7 +2595,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug20smp0438q006",
@@ -2405,7 +2611,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug21smp0438q006",
@@ -2433,7 +2641,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug23smp0438q006",
@@ -2447,7 +2657,9 @@
         "original_answer": "three-way handshake protocol\n+ ds\n- \n\nflow control on transport layer\n\ncredit mechanism\n+ \n-\nmultiplexing / demultiplexing\n+\n-",
         "original_sample_id": "smp0438q006",
         "is_augmented": "true",
-        "question_id": "q006"
+        "question_id": "q006",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1014q016",
@@ -2531,7 +2743,9 @@
         "original_answer": "(0-127).0.0.0\n(0-127).255.255.255",
         "original_sample_id": "smp1683q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1683q026",
@@ -2545,7 +2759,9 @@
         "original_answer": "(0-127).0.0.0\n(0-127).255.255.255",
         "original_sample_id": "smp1683q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1084q017",
@@ -2559,7 +2775,9 @@
         "original_answer": "spanning trees are individual for every is and are initially not known to other is.  they represent a subnetwork, with one fixed path from this is to every other node in this subnet. these paths are unicast paths. this property can be used to define a spanning tree, which contains all is that participate in a multicast group. if a broad/multicast is then sent to one of the nodes, it will distribute the data to every other node in the spanning tree. these spanning trees can be calculated with link state routing use the best path (shortest, smallest delay, highest bandwidth etc.) specific for data transfer. for multicast, the participating nodes all have the same spanning tree (maybe also other trees) so it does not matter to which node the multicast is sent, it will always reach every node in the group. for broadcasting, this spanning tree simply includes every node in the network.",
         "original_sample_id": "smp1084q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0461q006",
@@ -2713,7 +2931,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp1102q017",
@@ -2727,7 +2947,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp1102q017",
@@ -2741,7 +2963,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp1102q017",
@@ -2755,7 +2979,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp1102q017",
@@ -2769,7 +2995,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp1102q017",
@@ -2783,7 +3011,9 @@
         "original_answer": "all nodes are connected at least one other, all nodes can be reached. constructing a spanning tree: first measuring the distance to the neighbors, organize your package(send the distance), all nodes do the calculation which distances are the shortest.",
         "original_sample_id": "smp1102q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1677q026",
@@ -2853,7 +3083,9 @@
         "original_answer": "spanning trees make it convenient to model nodes, store and update information about neighboring intermediate stations (is) and determine and compute broad and multicast routes on the go. link state routing to construct a spanning tree for multicasting - by allowing all intermediate stations (is) to send link state packets about neighbors and multicast groups periodically. using broadcast to and from others, each is calculates its multicast tree, which can be used to determine outgoing lines or new routes on which packets can be transmitted.",
         "original_sample_id": "smp1114q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0391q005",
@@ -2979,7 +3211,9 @@
         "original_answer": "10.0.0.0 bis 10.255.255.255",
         "original_sample_id": "smp1622q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1622q026",
@@ -2993,7 +3227,9 @@
         "original_answer": "10.0.0.0 bis 10.255.255.255",
         "original_sample_id": "smp1622q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1073q017",
@@ -3007,7 +3243,9 @@
         "original_answer": "the spanning tree is espescially interesting for broad and multicasting because it has the whole network without any loop, that reduces traffic, which is very important espescially for broad and multicasting because of the high network load. link state routing can be used to produce the spanning trees in that way, that you measure the distances of all the neighbours, which you then distribute to all other nodes. once every node has all the information about all the delays between them, they can all calculate the optimale spanning trees for themselfs.",
         "original_sample_id": "smp1073q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1498q024",
@@ -3035,7 +3273,9 @@
         "original_answer": "0.0.0.0\n127.0.0.0",
         "original_sample_id": "smp1699q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1699q026",
@@ -3049,7 +3289,9 @@
         "original_answer": "0.0.0.0\n127.0.0.0",
         "original_sample_id": "smp1699q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0249q003",
@@ -3301,7 +3543,9 @@
         "original_answer": "tcp headers contain a checksum, while udp headers have no error control. tcp headers have acknowledgement numbers to ensure reliable communications while udp has no ack process.\ntcp headers contain an advertised window to avoid the sender overwhelming the receiver while udp has no means of flow control in their headers.",
         "original_sample_id": "smp0826q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp0826q012",
@@ -3315,7 +3559,9 @@
         "original_answer": "tcp headers contain a checksum, while udp headers have no error control. tcp headers have acknowledgement numbers to ensure reliable communications while udp has no ack process.\ntcp headers contain an advertised window to avoid the sender overwhelming the receiver while udp has no means of flow control in their headers.",
         "original_sample_id": "smp0826q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug02smp0826q012",
@@ -3329,7 +3575,9 @@
         "original_answer": "tcp headers contain a checksum, while udp headers have no error control. tcp headers have acknowledgement numbers to ensure reliable communications while udp has no ack process.\ntcp headers contain an advertised window to avoid the sender overwhelming the receiver while udp has no means of flow control in their headers.",
         "original_sample_id": "smp0826q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0826q012",
@@ -3343,7 +3591,9 @@
         "original_answer": "tcp headers contain a checksum, while udp headers have no error control. tcp headers have acknowledgement numbers to ensure reliable communications while udp has no ack process.\ntcp headers contain an advertised window to avoid the sender overwhelming the receiver while udp has no means of flow control in their headers.",
         "original_sample_id": "smp0826q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0334q005",
@@ -3469,7 +3719,9 @@
         "original_answer": "spanning trees have no cycles. * we add the additional attribute group to every link state packet indicating which group the sending is belongs to.",
         "original_sample_id": "smp1076q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1643q026",
@@ -3483,7 +3735,9 @@
         "original_answer": "0.0.0.0\n127.0.0.0",
         "original_sample_id": "smp1643q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1643q026",
@@ -3497,7 +3751,9 @@
         "original_answer": "0.0.0.0\n127.0.0.0",
         "original_sample_id": "smp1643q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp0240q003",
@@ -3665,7 +3921,9 @@
         "original_answer": "spanning trees don't have loops, which might be a problem for routing algorithms, also only a minimal amount of copies are required. first, adresses of neighbours are determined and the distance is calculated. for multicast, receiving groups are considered whenc calculating routes",
         "original_sample_id": "smp1072q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1667q026",
@@ -3693,7 +3951,9 @@
         "original_answer": "the tcp header includes - a sequence number, - an acknowledgement number and - an advertised window field not present in the udp-header. the udp header includes - a packet length field not present in the tcp-header.",
         "original_sample_id": "smp0822q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1105q017",
@@ -3875,7 +4135,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0832q012",
@@ -3889,7 +4151,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0832q012",
@@ -3903,7 +4167,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0832q012",
@@ -3917,7 +4183,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0832q012",
@@ -3931,7 +4199,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0832q012",
@@ -3945,7 +4215,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0832q012",
@@ -3959,7 +4231,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0832q012",
@@ -3973,7 +4247,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug08smp0832q012",
@@ -3987,7 +4263,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug09smp0832q012",
@@ -4001,7 +4279,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug10smp0832q012",
@@ -4015,7 +4295,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug11smp0832q012",
@@ -4029,7 +4311,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug12smp0832q012",
@@ -4043,7 +4327,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug13smp0832q012",
@@ -4057,7 +4343,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug14smp0832q012",
@@ -4071,7 +4359,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug15smp0832q012",
@@ -4085,7 +4375,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug16smp0832q012",
@@ -4099,7 +4391,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug17smp0832q012",
@@ -4113,7 +4407,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug18smp0832q012",
@@ -4127,7 +4423,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug19smp0832q012",
@@ -4141,7 +4439,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug20smp0832q012",
@@ -4155,7 +4455,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug21smp0832q012",
@@ -4169,7 +4471,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug22smp0832q012",
@@ -4183,7 +4487,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug23smp0832q012",
@@ -4197,7 +4503,9 @@
         "original_answer": "tcp: -connection oriented -error control -end to end flow control udp: -connectionless -no flow control -no error control or retransmission -maybe used with broadcast/multicast and streaming",
         "original_sample_id": "smp0832q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0836q012",
@@ -4323,7 +4631,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0666q010",
@@ -4337,7 +4647,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0666q010",
@@ -4351,7 +4663,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0666q010",
@@ -4365,7 +4679,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0666q010",
@@ -4379,7 +4695,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0666q010",
@@ -4407,7 +4725,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0666q010",
@@ -4421,7 +4741,9 @@
         "original_answer": "l1 service is an unreliable bit stream. it is the most basic type of transfer service, without sequence errors.\nl2 service is a reliable and efficient data transfer between two adjacent stations. transfer could occur between more than 2 stations, but a physical connection is required.\nl2 functions is data transfer via frames with flow control, error control and correction and configuration management.",
         "original_sample_id": "smp0666q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0646q010",
@@ -4519,7 +4841,9 @@
         "original_answer": "if you use piggbacking on the sliding window protocol, \nthe receiver waits for a given time period to attach the sequence number\nand the next ack-sequence number to the next frame.\n\nin order to do that, additional time delay has to be considered and the \nsender has to be informed about the fact, that there are probably no \nstandalone ack frames transmitted. also, the sender has to attach the \nack to the data himself.",
         "original_sample_id": "smp1525q024",
         "is_augmented": "true",
-        "question_id": "q024"
+        "question_id": "q024",
+        "audit": "uncertain",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0227q003",
@@ -4743,7 +5067,9 @@
         "original_answer": "sequence number, acknowledgement number, flags and options.",
         "original_sample_id": "smp0795q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp0795q012",
@@ -4757,7 +5083,9 @@
         "original_answer": "sequence number, acknowledgement number, flags and options.",
         "original_sample_id": "smp0795q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug02smp0795q012",
@@ -4771,7 +5099,9 @@
         "original_answer": "sequence number, acknowledgement number, flags and options.",
         "original_sample_id": "smp0795q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0795q012",
@@ -4785,7 +5115,9 @@
         "original_answer": "sequence number, acknowledgement number, flags and options.",
         "original_sample_id": "smp0795q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1063q017",
@@ -4841,7 +5173,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0741q011",
@@ -4855,7 +5189,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0741q011",
@@ -4869,7 +5205,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "uncertain",
+        "confidence": 0.3
     },
     {
         "id": "aug04smp0741q011",
@@ -4883,7 +5221,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0741q011",
@@ -4897,7 +5237,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0741q011",
@@ -4911,7 +5253,9 @@
         "original_answer": "fairness is the problem，the data reserve is not depending on the location, some have more frames than others",
         "original_sample_id": "smp0741q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0835q012",
@@ -4995,7 +5339,9 @@
         "original_answer": "differential manchester encoding should be used, because \n- it is not susceptible to noise, it depends on signal polarity, not absolute values\n- it has a good self-clocking feature, so it is synchronous, which is useful for when the traffic is greater than the link's capacities.",
         "original_sample_id": "smp0152q002",
         "is_augmented": "true",
-        "question_id": "q002"
+        "question_id": "q002",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0152q002",
@@ -5009,7 +5355,9 @@
         "original_answer": "differential manchester encoding should be used, because \n- it is not susceptible to noise, it depends on signal polarity, not absolute values\n- it has a good self-clocking feature, so it is synchronous, which is useful for when the traffic is greater than the link's capacities.",
         "original_sample_id": "smp0152q002",
         "is_augmented": "true",
-        "question_id": "q002"
+        "question_id": "q002",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0197q002",
@@ -5093,7 +5441,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0701q010",
@@ -5107,7 +5457,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug02smp0701q010",
@@ -5121,7 +5473,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug03smp0701q010",
@@ -5135,7 +5489,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug04smp0701q010",
@@ -5149,7 +5505,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug05smp0701q010",
@@ -5163,7 +5521,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug06smp0701q010",
@@ -5177,7 +5537,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug07smp0701q010",
@@ -5191,7 +5553,9 @@
         "original_answer": "l1 service\nserves the function of the transmittion of the bit stream\nlimited data rate\nloss, insertion, changing of bits possible\n\nl2 service \nreliable data transfer\nmay between more than 2 devives\nconnection by one physical cannel\n\nl3 funkctions\ndata ist transmitted in frames\nincludes error detection and correction and flow control",
         "original_sample_id": "smp0701q010",
         "is_augmented": "true",
-        "question_id": "q010"
+        "question_id": "q010",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp1098q017",
@@ -5219,7 +5583,9 @@
         "original_answer": "the most important property of the spanning trees is that they do not contain loops, this is appealing to the broad- and multicasting , because the amount of outgoing lines will be reduced , making also the number of packets smaller and the number of repeated packets will decrease. in the case of the multicast, all is belonging to the group have to know the multicast tree, that is why link state routing is appropriate. it is important to know that the basis of this kind of routing is that all neighbors send each other their own link state packet in which they have information about the costs that their own adjacent links have.",
         "original_sample_id": "smp1058q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0369q005",
@@ -5275,7 +5641,9 @@
         "original_answer": "spanning trees are interesting for broad- and multicasting because they represent a subset of a graph that contains all nodes but no loops. if every router in the network knows about the structure of the spanning tree, it can simply forward a received broadcast to the remaining spanning tree lines without creating duplicates or not using the bandwidth optimally. in the link state algorithm all stations have information about the existing other stations and can create a model of the topology by themselves. this model can then be used to create a spanning tree that fulfills the advantages mentioned above.",
         "original_sample_id": "smp1064q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0878q013",
@@ -5317,7 +5685,9 @@
         "original_answer": "it works with high-power in order to work very performant with a high amount of data.\nproblem is that it is not that good, when there is less data.",
         "original_sample_id": "smp0732q011",
         "is_augmented": "true",
-        "question_id": "q011"
+        "question_id": "q011",
+        "audit": "uncertain",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0830q012",
@@ -5359,7 +5729,9 @@
         "original_answer": "broadcast: x.255.255.255\nnetwork identifier: x.0.0.0",
         "original_sample_id": "smp1631q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1631q026",
@@ -5373,7 +5745,9 @@
         "original_answer": "broadcast: x.255.255.255\nnetwork identifier: x.0.0.0",
         "original_sample_id": "smp1631q026",
         "is_augmented": "true",
-        "question_id": "q026"
+        "question_id": "q026",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1006q016",
@@ -5401,7 +5775,9 @@
         "original_answer": "both share the goal of flooding a network with some message while causing as few duplicates as possible. reverse path forwarding: a sender sends a message to another node via the shortest route. the receiver sends a message back to the sender via all of its adjacent nodes. if the original sender now receives the returnings packet from multiple routes and drops every packet that was received from a route other than the shortest one to the original receiver because those packages are considered duplicates. reverse path broadcast: all nodes inspect the sender and receiver of incoming packets and check if they have forwarded such messages in the past. based on the historical information they can now decide if they are part of the shortest route between sender and receiver of the inspected packet. the inspected packet is only forwarded further to nodes for which the inspecting node is part of the shortest path.",
         "original_sample_id": "smp1006q016",
         "is_augmented": "true",
-        "question_id": "q016"
+        "question_id": "q016",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp1060q017",
@@ -5415,7 +5791,9 @@
         "original_answer": "a spanning tree is a tree that connects all edges in a graph with the minimum number of possible edges. in this way, spanning trees help in avoiding loops while connecting all the edges in a graph that makes them good for building networks for broad and multicasting.  the already existing lsr can be used to construct a spanning tree for multicasting, first, each node must find the shortest path to all other nodes(linked state path/lsp), and every time the network changes, this must be repeated and new lsps must be calculated. these lsps wil be the only paths used to communicate between the nodes.",
         "original_sample_id": "smp1060q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1625q026",
@@ -5471,7 +5849,9 @@
         "original_answer": "requirement for piggybacking are:\n1.frames may contain implicit acks(acknowledgements)\n2.it should be duplex operation\n3.the initial sequence no.should be 0.\n4.the next sequence no. what is estimated is given.\n5.the next ack-sequence no. that is expected is also given.",
         "original_sample_id": "smp1490q024",
         "is_augmented": "true",
-        "question_id": "q024"
+        "question_id": "q024",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp0206q003",
@@ -5891,7 +6271,9 @@
         "original_answer": "different from udp, tcp also includes the following headers: acknowledgement number sequence number urgent pointer advertised window",
         "original_sample_id": "smp0783q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "incorrect",
+        "confidence": 0.2
     },
     {
         "id": "aug00smp0126q002",
@@ -5905,7 +6287,9 @@
         "original_answer": "the use of the differential manchester encoding (dme) would be applicable in this situation. it has a good self-clocking feature which allows a good way to identify bits. furthermore it has a low susceptibility to noise because dme only records the polarity of signals. this is great when there is a lot of traffic on a link.",
         "original_sample_id": "smp0126q002",
         "is_augmented": "true",
-        "question_id": "q002"
+        "question_id": "q002",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug01smp0126q002",
@@ -5919,7 +6303,9 @@
         "original_answer": "the use of the differential manchester encoding (dme) would be applicable in this situation. it has a good self-clocking feature which allows a good way to identify bits. furthermore it has a low susceptibility to noise because dme only records the polarity of signals. this is great when there is a lot of traffic on a link.",
         "original_sample_id": "smp0126q002",
         "is_augmented": "true",
-        "question_id": "q002"
+        "question_id": "q002",
+        "audit": "incorrect",
+        "confidence": 0.0
     },
     {
         "id": "aug00smp0354q005",
@@ -5947,7 +6333,9 @@
         "original_answer": "sequence number \nacknowledgment number (ack. no.)   \nhl/resv/flags \nurgent pointer",
         "original_sample_id": "smp0823q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp0823q012",
@@ -5961,7 +6349,9 @@
         "original_answer": "sequence number \nacknowledgment number (ack. no.)   \nhl/resv/flags \nurgent pointer",
         "original_sample_id": "smp0823q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug02smp0823q012",
@@ -5975,7 +6365,9 @@
         "original_answer": "sequence number \nacknowledgment number (ack. no.)   \nhl/resv/flags \nurgent pointer",
         "original_sample_id": "smp0823q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug03smp0823q012",
@@ -5989,7 +6381,9 @@
         "original_answer": "sequence number \nacknowledgment number (ack. no.)   \nhl/resv/flags \nurgent pointer",
         "original_sample_id": "smp0823q012",
         "is_augmented": "true",
-        "question_id": "q012"
+        "question_id": "q012",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug00smp1095q017",
@@ -6003,7 +6397,9 @@
         "original_answer": "a spanning tree has only one connection to every node of the network. if it is used for broadcasting, no unnecessary duplicates are needed since every duplicate reaches a destination node. this means unlike flooding under any circumstances only on packet arrives at each node. if you have a spanning tree containing all nodes of a multicast, the same works for multicasting.   link state routing usually uses flooding to find the shortest path to a certain node in this case you use flooding to find a spanning tree by only returning paths to nodes which have not been found yet.",
         "original_sample_id": "smp1095q017",
         "is_augmented": "true",
-        "question_id": "q017"
+        "question_id": "q017",
+        "audit": "partially correct",
+        "confidence": 0.5
     },
     {
         "id": "aug01smp1483q024",
