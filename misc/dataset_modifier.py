@@ -1,5 +1,7 @@
 import json
 import random
+import re
+
 folders = {
     'incorrect': './data/updated/incorrect/',
     'correct': './data/updated/correct/',
@@ -9,11 +11,11 @@ folders = {
 file_names = [
     'train',
     'validation',
-    'unseen_questions',
+    # 'unseen_questions',
     'unseen_answers'
 ]
 
-original_path = 'data/original/'
+original_path = './data/original/'
 
 def quicksort(data, low=0, high=None):
     if high is None:
@@ -63,7 +65,7 @@ def remove_partial_correct_data(data):
     
     return binary_data
 
-def separate_correct_incorrect(data):
+def separate(data):
     correct = []
     partially_correct = []
     incorrect = []
@@ -77,8 +79,8 @@ def separate_correct_incorrect(data):
     
     return {'correct':correct, 'incorrect': incorrect, 'partially_correct': partially_correct}
 
-def save_json(data, path):
-    inp = input('Do you want to save? [Y/n]: ').lower()
+def save_json(data, path, ask=True):
+    inp = input('Do you want to save? [Y/n]: ').lower() if ask == True else 'y'
     if inp in ['', 'y', 'yes']:
         with open(path, 'w', encoding='utf8') as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
@@ -97,17 +99,25 @@ def count_data(data):
     
     return count
 
-def get_questions(data):
-    questions = {}
+def count_original_data(data, key):
+    st = set()
     for record in data:
-        if record['question'] not in questions:
-            questions[record['question']] = {
-                'question': record['question'],
-                'reference_answer': record['reference_answer'],
-                'max_score': record['max_score']
-                }
+        if record['verification_feedback'].lower() == 'incorrect':
+            st.add(record[key])
     
-    return list(questions.values())
+    return len(st)
+
+# def get_q_id(question):
+#     for q in questions:
+#         if question.lower() == questions[q]['question']:
+#             return q
+
+def get_questions(data):
+    q_set = set()
+    for record in data:
+        q_set.add(record['question'])
+    
+    return q_set
 
 def remove_id(data):
     for record in data:
@@ -138,6 +148,9 @@ def format_data(data: list[dict]) -> list[dict]:
             'normalized_score': record['normalized_score']
         })
 
+    for _ in range(12):
+        random.shuffle(formatted)
+
     print(f'count: {count_data(formatted)}')
     return lower_case_data(formatted)
 
@@ -148,18 +161,94 @@ def lower_case_data(data):
                 record[key] = value.lower()
     return data
 
-print(__name__, '\n\n')
+# def generate_id(data):
+#     for i, record in enumerate(data):
+#         record['id'] = f'smp{i:04d}{get_q_id(record['question'])}'
+    
+#     return data
+
+def curate_data():
+    questions = list(get_json('data/metadata/acceptable.json').keys())
+
+    for i in ['unseen_answers.json']:
+        curated = []
+        rejected = []
+        data = get_json(f'data/updated/formatted/{i}')
+        for record in data:
+            if record['id'][-4:] in questions:
+                curated.append(record)
+            else:
+                rejected.append(record)
+
+        print(f'{i}: Rejected: {len(rejected)}')
+        save_json(rejected, f'./data/rejected/{i}')
+
+        print(f'{i}: Accepted: {len(curated)}')
+        save_json(curated, f'./data/curated/{i}')
+    
+def find_data(data, id):
+    for record in data:
+        if record is None: continue
+        if record['id'] == id:
+            return record
+    
+    else:
+        return None
+    
+def extract_prediction(text, ID):
+        if not isinstance(text, str):
+            return None
+
+        # Find JSON object that contains "predicted_label"
+        match = re.search(
+            r'\{\s*"predicted_label"\s*:\s*"(correct|partial|incorrect|uncertain)"\s*,\s*"confidence"\s*:\s*[0-9.]+\s*\}',
+            text,
+            re.S
+        )
+
+        if not match:
+            return None
+
+        try:
+            data = json.loads(match.group())
+            return {
+                "ID": ID,
+                "predicted_label": data["predicted_label"],
+                "confidence": float(data["confidence"])
+            }
+        except Exception:
+            return None
+        
+
 if __name__ == '__main__':
+    auditted_result = get_json('data/metadata/audit.json')
+    aug = get_json('./data/augmented/aug.json')
 
-    for file in file_names:
-        data = get_json(original_path+file+'.json')
-        data = quicksort(data)
-        data = add_max_scores(data)
-        data = normalize_score(data)
-        data = format_data(data)
-        # data = remove_id(data)
-        data = separate_correct_incorrect(data)
+    audited_s = []
+    audited_u = []
+    discarded = []
+    for record in aug:
 
-        save_json(data['correct'], folders['correct']+file+'.json')
-        save_json(data['incorrect'], folders['incorrect']+file+'.json')
-        save_json(data['partially_correct'], folders['partially_correct']+file+'.json')
+        audit = find_data(auditted_result, record['id'])
+        if audit == None:
+            audited_u.append(record)
+
+        else:
+            print(audit)
+            if audit['confidence'] <= .5:
+                audited_u.append(record)
+            elif audit['predicted_label'] == record['verification_feedback']:
+                record['audit'] = audit['predicted_label']
+                audited_s.append(record)
+            else:
+                record['audit'] = audit['predicted_label']
+                discarded.append(record)
+    print('passed: ', len(audited_s))
+    save_json(audited_s, './data/augmented/passed.json')
+    print('uncertain: ', len(audited_u))
+    save_json(audited_u, './data/augmented/uncertain.json')
+    print('discarded: ', len(discarded))
+    save_json(discarded, './data/augmented/discarded.json')
+    
+else:
+    print(__name__, '\n\n')

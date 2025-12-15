@@ -1,0 +1,156 @@
+{
+    "q002": {
+        "id": "Q002",
+        "question": "assume you have a local network with 3 users that are all interconnected and have perfect clocks. typically the network is often congested as all users generate more traffic than the link’s capacities. which of the encoding techniques introduced in the lecture should be used in this network to encode bitstreams? give two reasons for your answer in 2-4 sentences.",
+        "reference_answer": "binary encoding, as it is the most efficient in terms of bandwidth since you get a full bit per baud instead of only 0.5. additionally, you do not have to deal with clock drift and various ticking rates as all clocks are perfect. therefore, self-clocking / clock recovery is not as necessary. simple and cheap is also acceptable as one of the reasons.",
+        "max_score": 2.5,
+        "count": {
+            "incorrect": 12,
+            "correct": 94,
+            "partially correct": 5
+        }
+    },
+    "q003": {
+        "id": "Q003",
+        "question": "consider a single server queueing system with a buffer of size 10. let us assume that 9 packets arrive per second and 10 packets are served per second on an average. assume you monitor the system for exactly one minute after the system reaches equilibrium. how many seconds would you expect the system to be in a state in which there are less than 10 packets waiting in the queue? you need to justify your answer by showing steps involved; calculations, however, need not be included. headers.",
+        "reference_answer": "since we have a buffer size (n) of 10, we will always have less than 10 packets waiting in the queue unless there are exactly 10 packets in the queue. therefore, we first calculate the probability of the system being full/having 10 packets in the queue. this is also called “blocking probability” or p_b.\np_b = ((1 - utilization) * utilization^n) / 1 - utilization^(n+1) = ((1-0.9) * 0.9^10) / (1 - 0.9^11) = 0.0508\nalternatively to the blocking probability, it is also valid to directly calculate p(x less than 10) = (1 -p_b) by summing up the probabilities for 0, 1, …, 9 packets to be in the queue. to calculate the expected time where the system is not blocked in the 60-second observation time-frame, we simply multiply the time frame with p(x less than 10) or the complement of p_b (0.25p) = 60 * (1-p_b) = 56.9512 seconds",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 11,
+            "correct": 24,
+            "partially correct": 14
+        }
+    },
+    "q005": {
+        "id": "Q005",
+        "question": "consider the following topology from the exercise. this time, node a wants to distribute a packet using reverse path broadcast (rpb). assume that every is knows the best path to a and also whether they are the next hop of their neighbors on the unicast path to a.please list all the packets which are sent together with the information whether they will be forwarded or dropped at the receiving nodes. use the following notation: (sender, receiver, drop) for dropped and (sender, receiver, forward) for forwarded packets. please group these tuples according to the number of hops the packets have travelled so far. for dropped packets, please specify the reason why the packet has been dropped in a few words.example for the notation:hop 1:(c, a, forward)(c, b, drop) <= describe reason herehop 2:(a, d, drop) <= describe reason here",
+        "reference_answer": "hop 1 :(a, b, forward),(a, c, forward), (a, d, drop) <= reason: remaining neighbors c and f do not use d as the next hop to get to a hop 2 :(b, e, forward),(c, f, drop), <= reason: remaining neighbors d, e, g do not use f as the next hop to get to a hop 3 :(e, g, forward)hop 4 :(g, h, drop) <= reason: h is only connected to g, packet is not forwarded to incoming link",
+        "max_score": 2.5,
+        "count": {
+            "incorrect": 3,
+            "correct": 26,
+            "partially correct": 44
+        }
+    },
+    "q006": {
+        "id": "Q006",
+        "question": "discuss 3 methods (each with at least one advantage and disadvantage) that address the problem of duplicate packets on the transport layer in a connection-oriented service.",
+        "reference_answer": "1. to use temporarily valid tsaps -method: -tsap valid for one connection only -generate always new tsaps -evaluation -in general not always applicable:-process server addressing method not possible, because -server is reached via　a designated/known tsap - some tsaps always exist as \"well-known\" 2. to identify connections individually -method: -each individual connection is assigned a new seqno and -endsystems remember already assigned seqno -evaluation -endsystems must be capable of storing this information -prerequisite: -connection oriented system (what if connection-less?) -endsystems, however, will be switched off and it is necessary that the information is reliably available whenever needed 3. to identify pdus individually: individual sequential numbers for each pdu -method: -seqno basically never gets reset -e.g. 48 bit at 1000 msg/sec: reiteration after 8000 years -evaluation -higher usage of bandwidth and memory -sensible choice of the sequential number range depends on -the packet rate -a packet's probable \"lifetime\" within the network",
+        "max_score": 1.5,
+        "count": {
+            "incorrect": 1,
+            "correct": 66,
+            "partially correct": 11
+        }
+    },
+    "q010": {
+        "id": "Q010",
+        "question": "name the 3 service classes the data link layer offers and explain the differences between the classes.",
+        "reference_answer": "1.unconfirmed connectionless - no ack, loss of data possible, no flow control, no connect or disconnect.\n2.confirmed connectionless - with ack, no loss of data (timeout and retransmit instead→ duplicates and sequence errors possible), no flow control, no connect or disconnect.\n3.connection-oriented - no data loss, duplication or sequencing errors. instead a 3 phased communication with connect and disconnect, and flow control",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 58,
+            "partially correct": 8
+        }
+    },
+    "q011": {
+        "id": "Q011",
+        "question": "please explain the problem with \"distributed queue dual buses\" that was discussed in the lecture in 1-3 sentences.",
+        "reference_answer": "depending on your position in the bus station have a disadvantage/advantage when reserving transmission rights.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 58,
+            "partially correct": 9
+        }
+    },
+    "q012": {
+        "id": "Q012",
+        "question": "state at least 4 of the differences shown in the lecture between the udp and tcp headers.",
+        "reference_answer": "possible differences :\nthe upd header (8 bytes) is much shorter than the tcp header (20-60 bytes)\nthe udp header has a fixed length while the tcp header has a variable length\nfields contained in the tcp header and not the udp header :\n-sequence number\n-acknowledgment number\n-reserved\n-flags/control bits\n-advertised window\n-urgent pointer\n-options + padding if the options are\nudp includes the packet length (data + header) while tcp has the header length/data offset (just header) field instead\nthe sender port field is optional in udp, while the source port in tcp is necessary to establish the connection",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 1,
+            "correct": 42,
+            "partially correct": 12
+        }
+    },
+    "q013": {
+        "id": "Q013",
+        "question": "to model the packet arrivals as a poisson process, we assumed that the arrivals for each time interval δt are independent. does this assumption hold for real internet traffic? explain your answer in 2-5 sentences. ",
+        "reference_answer": "no. real internet traffic often comes in bursts. therefore, arrivals are not independent because the probability of an arrival happening at a node is influenced by previous arrivals at the node. for example, on-demand video streams selectively load the next video segments when needed. this means the actual network utilization depends on the current playback state on the client-side. the packet arrivals are not independent, as it is likely that there is a low utilization directly after the next segments have been loaded.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 4,
+            "correct": 26,
+            "partially correct": 22
+        }
+    },
+    "q014": {
+        "id": "Q014",
+        "question": "transparent bridges manage a bridge table for the forwarding process. please describe what information the table holds and how it is modified during the backwards learning phase. how is the table used in the forwarding process and what is one benefit of that? please answer the question in 2-5 sentences. ",
+        "reference_answer": "1.a mapping between destinations/stations (macs) and outgoing lan interfaces.\n2.this table is initially empty and received packages are flooded on every line. when a bridge receives a frame (as the bridge runs in promiscuous mode it listens in on all the traffic arriving at its lan links) with source address q on lan l, it adds the timestamped entry “q can be reached over l” to the table and the next time a packet with destination q arrives, it is forwarded on link l. the time-stamp is used to update or purge old entries. therefore, it learns by observing the incoming traffic.\n3.to do selective forwarding instead of flooding. \n4.i)less duplication/unnecessary flooding is prevented.\nii)less congestion.\niii)better bandwidth usage than flooding.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 2,
+            "correct": 11,
+            "partially correct": 42
+        }
+    },
+    "q016": {
+        "id": "Q016",
+        "question": "what is the purpose of reverse path forwarding and reverse path broadcast? how do they work?",
+        "reference_answer": "purpose: both implement a more efficient kind (in terms of duplicate packets) of broadcasting than flooding / to minimize the number of duplicate packets in the network when broadcasting.\n\nreverse path forwarding:  each node has a routing table stemming from unicast routing algorithms. when receiving a packet of sender s from neighbor n at node x, check the routing table and only forward the packet to all adjacent nodes (except for n) when you would send packets to s over n → the assumption is that the packet used the best route until now.\nreverse path broadcast: nodes monitor unicast traffic to learn which paths in the network they are a part of, that is node x knows that is on the best path between two nodes a and b if it receives unicast packets coming from a and going to b or visa versa. in other words, each node knows which spanning trees it is part of in the network. reverse path broadcasting works identical to reverse path forwarding with the exception that it only forwards packets on edges that are part of a spanning tree (again excluding the incoming line to n).",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 3,
+            "correct": 23,
+            "partially correct": 34
+        }
+    },
+    "q017": {
+        "id": "Q017",
+        "question": "which property of spanning trees makes them appealing for broad- and multicasting? explain how you can modify link state routing to construct a spanning tree for multicasting.",
+        "reference_answer": "property: there is a single unique path between every pair of nodes in the tree. alternatively, you can say that spanning trees are subnets of a network that do not contain loops but contain all nodes. this means that no unnecessary duplicates are distributed in the network when forwarding packets using that tree structure.\n\nspanning tree with link state routing: each intermediate system knows which multicast groups it belongs to, but initially doesn’t know which other is belong to the groups. therefore, you can add multicast group information to the link state packet and each node can construct multicast trees once the full network topology and group information are distributed in the whole network, as each node then has the complete state information stored locally (e.g. with prim or kruskal)",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 4,
+            "correct": 20,
+            "partially correct": 39
+        }
+    },
+    "q020": {
+        "id": "Q020",
+        "question": "what happens to the \"collision domain diameter\" if you use csma / cd and increase the speed of a network by a factor of 10, eg from 10mb / s to 100mb / s (all else being equal)?",
+        "reference_answer": "diameter decreases by a factor of 10, e.g 300m to 30m.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 1,
+            "correct": 55,
+            "partially correct": 1
+        }
+    },
+    "q024": {
+        "id": "Q024",
+        "question": "what requirement has to be met so that you can use the piggybacking extension to the sliding window protocol?",
+        "reference_answer": "piggybacking only makes sense if there is a full-duplex or semi-duplex connection between sender and receiver i.e.  two-way communication or frames must contain additional field for acknowledgement.",
+        "max_score": 1.0,
+        "count": {
+            "incorrect": 16,
+            "correct": 39,
+            "partially correct": 9
+        }
+    },
+    "q026": {
+        "id": "Q026",
+        "question": "write-down all addresses in class a networks that are reserved.",
+        "reference_answer": "126 class a nets can be addressed in classful ip addressing (1.xx.yy.zz - 126.xx.yy.zz) 127.xx.yy.zz is reserved for loopback testing 0.xx.yy.zz can be accepted if stated accordingly (definitions defer whether this is in class a)",
+        "max_score": 0.5,
+        "count": {
+            "incorrect": 18,
+            "correct": 42,
+            "partially correct": 23
+        }
+    }
+}
