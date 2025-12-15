@@ -30,7 +30,6 @@ class QAClassifierDataset(torch.utils.data.Dataset):
         )
 
         item = {k: v.squeeze(0) for k, v in enc.items()}
-        print(item)
         item["labels"] = LABEL2ID[s["verification_feedback"]]
 
         if self.is_train:
