@@ -30,7 +30,7 @@ class QAClassifierDataset(Dataset):
             return_tensors="pt"
         )
 
-        label = LABEL2ID[s["label"]]
+        label = LABEL2ID[s["verification_feedback"]]
         weight = compute_sample_weight(s, self.class_weight)
 
         return {

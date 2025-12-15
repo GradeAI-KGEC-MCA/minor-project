@@ -6,5 +6,6 @@ def select_directory_local():
 
 def select_directory_colab():
     from google.colab import drive
+    import os
     drive.mount('/content/drive')
     os.chdir('/content/drive/MyDrive/minor-project')
