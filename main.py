@@ -1,1 +1,3 @@
-print('smp0475q007'[-4:])
+# import model.test
+import model.test_results.temp
+
