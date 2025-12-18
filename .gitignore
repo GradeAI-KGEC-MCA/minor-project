@@ -8,4 +8,4 @@ model/bert_grader/
 __pycache__/
 model/__pycache__/
 # model/test_results/
-model/bert_tokenizer/
+model/bert_uncased_true/
