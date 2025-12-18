@@ -1,0 +1,1736 @@
+[
+    {
+        "id": "smp0003none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0328none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0380none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0317none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0256none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0176none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0268none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0267none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0152none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0450none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0372none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0326none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0164none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0295none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0400none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0103none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0189none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0384none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0473none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0272none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0169none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0375none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0258none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0214none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0056none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0138none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0462none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0233none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0110none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0415none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0407none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0410none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0349none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0063none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0330none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0136none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0128none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0396none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0339none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0342none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0381none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0135none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0305none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0248none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0266none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0261none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0224none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0284none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0291none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0394none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0212none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0112none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0420none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0271none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0137none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0098none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0059none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0366none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0368none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0425none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0197none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0441none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0253none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0298none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0329none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0292none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0327none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0040none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0051none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0046none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0302none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0239none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0146none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0117none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0093none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0091none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0001none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0332none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0237none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0448none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0436none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0225none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0335none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0013none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0012none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0350none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0293none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0026none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0022none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0030none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0294none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0310none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0364none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0418none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0297none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0126none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0478none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0075none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0316none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0083none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0378none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0120none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0132none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0377none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0262none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0235none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0438none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0186none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0419none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0308none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0245none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0141none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0184none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0477none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0226none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0116none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0416none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0313none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0289none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0157none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0049none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0174none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0250none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0070none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0191none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0182none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0358none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0041none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0355none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0362none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0113none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0167none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0466none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0306none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0000none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0247none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0077none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0143none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0374none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0432none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0218none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0379none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0440none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0064none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0257none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0255none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0300none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0154none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0370none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0079none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0227none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0393none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0148none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0081none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0315none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0134none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0095none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0140none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0270none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0323none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0322none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0278none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0165none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0127none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0160none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0168none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0319none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0073none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0369none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0334none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0371none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0336none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0217none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0281none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0422none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0285none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0361none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0133none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0351none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0107none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0301none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0345none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0131none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0277none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0017none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0115none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0230none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0373none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0439none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0122none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0383none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0389none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0401none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0274none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0338none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0244none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0279none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0125none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0320none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0220none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0260none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0019none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0118none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0080none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0078none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0205none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0475none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0265none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0341none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0071none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0009none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0090none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0015none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0158none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0343none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0357none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0052none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0469none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0194none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0376none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0142none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0280none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0405none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0082none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0097none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0444none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0066none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0460none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0175none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0102none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0034none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0314none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0340none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0449none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0203none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0304none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0147none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0048none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0269none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0188none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0221none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0062none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0352none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0282none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0002none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0234none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0067none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0008none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0288none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0028none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0249none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0054none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0242none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0391none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0215none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0199none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0119none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0324none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0386none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0299none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0190none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0467none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0058none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0004none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0307none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0318none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0354none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0254none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "incorrect",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0246none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0398none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0344none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0309none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0356none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0144none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0111none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0290none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "incorrect"
+    },
+    {
+        "id": "smp0387none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0348none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0321none",
+        "question": "name the two modes of control plane distribution and name one downside for each of them. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0145none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0201none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0331none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0150none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0399none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0360none",
+        "question": "software-defined networking (sdn) introduces separate control and data planes to manage network flows. please explain the responsibilities of each plane in 1-2 sentences. further, name two tasks the sdn controller takes care of. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0471none",
+        "question": "what are the benefits and drawbacks of sdn compared to traditional networking,where each switch/router has to manage forwarding and routing on its own? describe two benefits and two drawbacks in 1-2 sentences each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0045none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0036none",
+        "question": "consider the following scenario: you are browsing the web for a very specific and important piece of information. however, you are not quite sure how to find it and adopt an iterative process of refining your query after every search, depending on the shown results and a skim of the first few websites. is it better to use a connection-oriented or connectionless service for your communication in this scenario? explain your answer in 1-4 sentences.",
+        "original_feedback": "incorrect",
+        "model_feedback": "correct"
+    },
+    {
+        "id": "smp0228none",
+        "question": "in an sdn, switches maintain a pipeline of flow tables and a meter table. summarize their respective functions in one sentence each. ",
+        "original_feedback": "correct",
+        "model_feedback": "correct"
+    }
+]

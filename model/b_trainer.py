@@ -1,7 +1,7 @@
 from transformers import Trainer
 from torch import nn
 
-class WeightedTrainer(Trainer):
+class BertTrainer(Trainer):
     def __init__(self, *args, class_weights=None, **kwargs):
         super().__init__(*args, **kwargs)
         # Weights are moved to the device (GPU/CPU) inside the loss function
