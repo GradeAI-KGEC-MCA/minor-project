@@ -221,34 +221,11 @@ def extract_prediction(text, ID):
         
 
 if __name__ == '__main__':
-    auditted_result = get_json('data/metadata/audit.json')
-    aug = get_json('./data/augmented/aug.json')
+    data_aug = get_json('./data/augmented/aug.json')
+    data_curated = get_json('./data/curated/train.json')
+    data = combine_data(data_aug, data_curated)
 
-    audited_s = []
-    audited_u = []
-    discarded = []
-    for record in aug:
-
-        audit = find_data(auditted_result, record['id'])
-        if audit == None:
-            audited_u.append(record)
-
-        else:
-            print(audit)
-            if audit['confidence'] <= .5:
-                audited_u.append(record)
-            elif audit['predicted_label'] == record['verification_feedback']:
-                record['audit'] = audit['predicted_label']
-                audited_s.append(record)
-            else:
-                record['audit'] = audit['predicted_label']
-                discarded.append(record)
-    print('passed: ', len(audited_s))
-    save_json(audited_s, './data/augmented/passed.json')
-    print('uncertain: ', len(audited_u))
-    save_json(audited_u, './data/augmented/uncertain.json')
-    print('discarded: ', len(discarded))
-    save_json(discarded, './data/augmented/discarded.json')
+    save_json('.data/updated/combined/train.json')
     
 else:
     print(__name__, '\n\n')
