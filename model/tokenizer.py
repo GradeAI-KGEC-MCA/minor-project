@@ -8,10 +8,8 @@ def tokenize(data_dict: dict, tokenizer_path: str = _default_tokenizer, is_train
     hf_datasets = {split: Dataset.from_list(data_list) for split, data_list in data_dict.items()}
     data = DatasetDict(hf_datasets)
     
-    # Exclude 'id' from the removal list so it stays in the dataset
-    sample_split = list(data.keys())[0]
-    all_columns = data[sample_split].column_names
-    columns_to_remove = [col for col in all_columns if col != "id"]
+    # We NO LONGER define columns_to_remove. 
+    # This keeps every field from every JSON split.
 
     def create_tokens(batch: dict) -> dict:
         combined_context = [f"Question: {q} Reference: {r}" for q, r in zip(batch["question"], batch["reference_answer"])]
@@ -26,7 +24,14 @@ def tokenize(data_dict: dict, tokenizer_path: str = _default_tokenizer, is_train
             encodings["labels"] = [1 if v == "correct" else 0 for v in batch["verification_feedback"]]
         return encodings
 
-    data = data.map(create_tokens, batched=True, batch_size=8, remove_columns=columns_to_remove)
+    # Map without remove_columns
+    data = data.map(create_tokens, batched=True, batch_size=8)
     
-    data.set_format(type="torch", columns=["input_ids", "attention_mask", "token_type_ids"], output_all_columns=True)
+    # Crucial: set_format tells the model to ignore the 'stuff' and 'extra fields'
+    # so they don't go into BERT as inputs.
+    data.set_format(
+        type="torch", 
+        columns=["input_ids", "attention_mask", "token_type_ids"], 
+        output_all_columns=True 
+    )
     return data

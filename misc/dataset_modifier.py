@@ -225,7 +225,7 @@ if __name__ == '__main__':
     data_curated = get_json('./data/curated/train.json')
     data = combine_data(data_aug, data_curated)
 
-    save_json('.data/updated/combined/train.json')
+    save_json(data, 'data/updated/combined/train.json')
     
 else:
     print(__name__, '\n\n')
