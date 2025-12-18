@@ -1,47 +1,71 @@
-# train.py
 import numpy as np
-from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 import torch
 from torch import nn
 from sklearn.metrics import accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
+from transformers import AutoModelForSequenceClassification, TrainingArguments, Trainer
 from model.tokenizer import tokenize
 
-# Safe metrics function
+# --- METRICS ---
 def compute_metrics(eval_pred):
     logits, labels = eval_pred
     preds = np.argmax(logits, axis=-1)
     acc = accuracy_score(labels, preds)
-    f1 = f1_score(labels, preds, average="binary", zero_division=0)
-    return {"accuracy": acc, "f1": f1}
+    # Use macro F1 to give equal weight to both classes despite the skew
+    f1 = f1_score(labels, preds, average="macro", zero_division=0)
+    return {"accuracy": acc, "f1_macro": f1}
 
-# Custom Trainer with CrossEntropyLoss
-class CustomTrainer(Trainer):
+# --- CUSTOM TRAINER WITH WEIGHTED LOSS ---
+class WeightedTrainer(Trainer):
+    def __init__(self, *args, class_weights=None, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.class_weights = class_weights
+
     def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
         labels = inputs.pop("labels")
         outputs = model(**inputs)
         logits = outputs.logits
-        loss_fct = nn.CrossEntropyLoss()
+        
+        # CrossEntropy with weights for handling skew
+        loss_fct = nn.CrossEntropyLoss(weight=self.class_weights.to(model.device))
         loss = loss_fct(logits, labels)
+        
         return (loss, outputs) if return_outputs else loss
 
-# Load datasets
-data_files = {
-    "train": "./data/updated/combined/train.json",
-    "validation": "./data/updated/combined/train.json"
-}
-tokenized_data = tokenize(data_files=data_files, is_training=True)
+# --- DATA PREPARATION ---
+data_files = {"train": "./data/updated/combined/train.json"}
+# Note: tokenized_data["train"] contains the full dataset
+dataset_dict = tokenize(data_files=data_files, is_training=True)
+full_dataset = dataset_dict["train"]
 
-# Check label distribution
-train_labels = [x["labels"].item() for x in tokenized_data["train"]]
-print("Train labels distribution:", {0: train_labels.count(0), 1: train_labels.count(1)})
+# Extract labels for stratification and weight calculation
+all_labels = [x["labels"].item() for x in full_dataset]
+counts = np.bincount(all_labels)
+total = len(all_labels)
 
-# Load model
+# Calculate weights: Weight = Total / (Num_Classes * Count_per_Class)
+class_weights = torch.tensor([total / (2 * counts[0]), total / (2 * counts[1])], dtype=torch.float)
+print(f"Label distribution: {counts}")
+print(f"Applying Class Weights: {class_weights}")
+
+# Stratified Split (90% Train, 10% Val)
+indices = np.arange(len(full_dataset))
+train_idx, val_idx = train_test_split(
+    indices, 
+    test_size=0.1, 
+    stratify=all_labels, 
+    random_state=42
+)
+
+train_dataset = full_dataset.select(train_idx)
+eval_dataset = full_dataset.select(val_idx)
+
+# --- MODEL & TRAINING ---
 model = AutoModelForSequenceClassification.from_pretrained(
     "bert-base-uncased",
     num_labels=2
 )
 
-# Training arguments
 training_args = TrainingArguments(
     output_dir="./model/results",
     eval_strategy="epoch",
@@ -50,20 +74,23 @@ training_args = TrainingArguments(
     num_train_epochs=8,
     save_strategy="epoch",
     logging_dir="./logs",
-    report_to="none",
     load_best_model_at_end=True,
-    weight_decay=0.05
+    metric_for_best_model="f1_macro", # Best model based on F1, not accuracy
+    weight_decay=0.05,
+    report_to="none"
 )
 
-# Trainer
-trainer = CustomTrainer(
+trainer = WeightedTrainer(
     model=model,
     args=training_args,
-    train_dataset=tokenized_data["train"],
-    eval_dataset=tokenized_data["validation"],
-    compute_metrics=compute_metrics
+    train_dataset=train_dataset,
+    eval_dataset=eval_dataset,
+    compute_metrics=compute_metrics,
+    class_weights=class_weights
 )
 
-# Train and save
+# Start Training
 trainer.train()
+
+# Save final model
 model.save_pretrained("./model/bert_safe")
